@@ -4,7 +4,6 @@ This package contains a program designed to generate synthetic MRI images and se
 1. About the package
 2. How to execute the program
 3. Steps to execute main.py
-
 4. Output
 5. References
 

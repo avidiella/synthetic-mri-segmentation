@@ -3,8 +3,8 @@ This package contains a program designed to generate synthetic MRI images and se
 # Table of contents
 1. About the package
 2. How to execute the program
-3. Steps to execute main.py
-4. Output
+3. Steps to execute `main.py`
+4. Outputs
 5. References
 
 # 1. About the package
@@ -29,7 +29,7 @@ To execute this program, the `main.py` file should be called specifying the foll
 
 ```python main.py --freesurfer_directory --file_output --n_examples```
 
-# 4. Output
+# 4. Outputs
 Running this program will output several strings providing information about the image generation process.
 When finished running, a default Freesurfer directory should include the `processed_mask.nii.gz` file in the `mri` folder for each subject in the specified directory:
 

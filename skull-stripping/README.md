@@ -10,8 +10,8 @@ This package contains a program designed to process MRI files (nii.gz) using the
 # 1. About the package
 
 The contents of the package are the following:
-* File `main\_py`, which executes the program.
-* File `skull\_stripping.py`, the brain extrction module.
+* File `main_py`, which executes the program.
+* File `skull_stripping.py`, the brain extrction module.
 * File `requirements.txt`, contains libraries needed to execute the program.
 * File `README.md`, contains information about the program and how to execute it.
 
@@ -22,9 +22,9 @@ Before executing the program, be sure to install the necessary libraries from `r
 
 # 3. Steps to execute main.py
 To execute this program, the `main.py` file should be called specifying the following arguments:
-* `input\_path`: a path to the folder contiaining the different subject directories.
+* `input_path`: a path to the folder contiaining the different subject directories.
 
-```python main.py --input\_path```
+```python main.py --input_path```
 
 # 4. Output
 Running this program will output several strings providing information about the image processing process.
@@ -33,12 +33,12 @@ When finished running, each folder containing a nii.gz file should include a new
 
 ```bash
 
-SUBJECTS\_DIR/
+SUBJECTS_DIR/
 
 └── <subjectID>/
   ├── anat1/
-  │   ├── t1w.nii.gz            # Original file
-  │   └── t1w\_stripped.nii.gz   # Extracted brain
+  │   ├── t1w.nii.gz             # Original file
+  │   └── t1w_stripped.nii.gz   # Extracted brain
   └── ...
 
 ```

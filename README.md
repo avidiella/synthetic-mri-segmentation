@@ -60,6 +60,8 @@ Images were evaluated through both qualitative and quantitative methods. A jupyt
 
 Model results, inference and evaluation documents produced by `nnU-Net` are publicly available in section [model-results](https://github.com/avidiella/synthetic-mri-segmentation/tree/main/model-results).
 
+![Model Results](https://github.com/avidiella/synthetic-mri-segmentation/blob/main/model-results/model_results.png)
+
 ---
 
 ## How to cite this work

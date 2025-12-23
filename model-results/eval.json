@@ -1,0 +1,3646 @@
+{
+    "foreground_mean": {
+        "Dice": 0.7620522015938498,
+        "FN": 70972.06666666667,
+        "FP": 132467.97,
+        "IoU": 0.6354466581974617,
+        "TN": 16291465.106666667,
+        "TP": 282310.8566666667,
+        "n_pred": 414778.82666666666,
+        "n_ref": 353282.92333333334
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.662784568750983,
+            "FN": 154597.32,
+            "FP": 238918.11,
+            "IoU": 0.5193790661181837,
+            "TN": 15987574.61,
+            "TP": 396125.96,
+            "n_pred": 635044.07,
+            "n_ref": 550723.28
+        },
+        "2": {
+            "Dice": 0.8117822608726155,
+            "FN": 52081.94,
+            "FP": 151574.15,
+            "IoU": 0.6937810882113895,
+            "TN": 16157053.53,
+            "TP": 416506.38,
+            "n_pred": 568080.53,
+            "n_ref": 468588.32
+        },
+        "3": {
+            "Dice": 0.8115897751579508,
+            "FN": 6236.94,
+            "FP": 6911.65,
+            "IoU": 0.6931798202628117,
+            "TN": 16729767.18,
+            "TP": 34300.23,
+            "n_pred": 41211.88,
+            "n_ref": 40537.17
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8295699046878563,
+                    "FN": 44186,
+                    "FP": 158355,
+                    "IoU": 0.7087735594039191,
+                    "TN": 16081740,
+                    "TP": 492935,
+                    "n_pred": 651290,
+                    "n_ref": 537121
+                },
+                "2": {
+                    "Dice": 0.9031903939272736,
+                    "FN": 55164,
+                    "FP": 35844,
+                    "IoU": 0.8234705357489235,
+                    "TN": 16261676,
+                    "TP": 424532,
+                    "n_pred": 460376,
+                    "n_ref": 479696
+                },
+                "3": {
+                    "Dice": 0.8180609895355585,
+                    "FN": 2660,
+                    "FP": 7059,
+                    "IoU": 0.6921346890937312,
+                    "TN": 16745647,
+                    "TP": 21850,
+                    "n_pred": 28909,
+                    "n_ref": 24510
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30003_sess-d4954_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30003_sess-d4954_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8368030842459807,
+                    "FN": 61699,
+                    "FP": 149022,
+                    "IoU": 0.7193993320585275,
+                    "TN": 16026252,
+                    "TP": 540243,
+                    "n_pred": 689265,
+                    "n_ref": 601942
+                },
+                "2": {
+                    "Dice": 0.9036165679091626,
+                    "FN": 31578,
+                    "FP": 54274,
+                    "IoU": 0.8241793349484838,
+                    "TN": 16288923,
+                    "TP": 402441,
+                    "n_pred": 456715,
+                    "n_ref": 434019
+                },
+                "3": {
+                    "Dice": 0.8904333605887162,
+                    "FN": 3543,
+                    "FP": 6373,
+                    "IoU": 0.8025055268975682,
+                    "TN": 16727007,
+                    "TP": 40293,
+                    "n_pred": 46666,
+                    "n_ref": 43836
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30007_ses-d1641_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30007_ses-d1641_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6588760328964394,
+                    "FN": 175281,
+                    "FP": 243901,
+                    "IoU": 0.49128645006577637,
+                    "TN": 15953212,
+                    "TP": 404822,
+                    "n_pred": 648723,
+                    "n_ref": 580103
+                },
+                "2": {
+                    "Dice": 0.7616068190906947,
+                    "FN": 71127,
+                    "FP": 184610,
+                    "IoU": 0.6149959728714556,
+                    "TN": 16112971,
+                    "TP": 408508,
+                    "n_pred": 593118,
+                    "n_ref": 479635
+                },
+                "3": {
+                    "Dice": 0.6369008535784636,
+                    "FN": 3329,
+                    "FP": 3860,
+                    "IoU": 0.46724470134874757,
+                    "TN": 16763722,
+                    "TP": 6305,
+                    "n_pred": 10165,
+                    "n_ref": 9634
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30008_ses-d0061_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30008_ses-d0061_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8584691603534441,
+                    "FN": 33456,
+                    "FP": 162404,
+                    "IoU": 0.7520332614222195,
+                    "TN": 15987352,
+                    "TP": 594004,
+                    "n_pred": 756408,
+                    "n_ref": 627460
+                },
+                "2": {
+                    "Dice": 0.9256789525857553,
+                    "FN": 52687,
+                    "FP": 27460,
+                    "IoU": 0.8616408985132961,
+                    "TN": 16197948,
+                    "TP": 499121,
+                    "n_pred": 526581,
+                    "n_ref": 551808
+                },
+                "3": {
+                    "Dice": 0.8549417264765918,
+                    "FN": 2681,
+                    "FP": 3928,
+                    "IoU": 0.7466359976998275,
+                    "TN": 16751131,
+                    "TP": 19476,
+                    "n_pred": 23404,
+                    "n_ref": 22157
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30009_ses-d2457_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30009_ses-d2457_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.579756385816371,
+                    "FN": 204042,
+                    "FP": 255370,
+                    "IoU": 0.40820911287787837,
+                    "TN": 16000908,
+                    "TP": 316896,
+                    "n_pred": 572266,
+                    "n_ref": 520938
+                },
+                "2": {
+                    "Dice": 0.7697387073292211,
+                    "FN": 39624,
+                    "FP": 200778,
+                    "IoU": 0.6256709139065836,
+                    "TN": 16134995,
+                    "TP": 401819,
+                    "n_pred": 602597,
+                    "n_ref": 441443
+                },
+                "3": {
+                    "Dice": 0.6203631349115146,
+                    "FN": 3725,
+                    "FP": 4534,
+                    "IoU": 0.4496568268141534,
+                    "TN": 16762209,
+                    "TP": 6748,
+                    "n_pred": 11282,
+                    "n_ref": 10473
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30014_ses-d1176_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30014_ses-d1176_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8032496595856409,
+                    "FN": 62881,
+                    "FP": 194895,
+                    "IoU": 0.6711923385018853,
+                    "TN": 15993244,
+                    "TP": 526196,
+                    "n_pred": 721091,
+                    "n_ref": 589077
+                },
+                "2": {
+                    "Dice": 0.9006610854851281,
+                    "FN": 52113,
+                    "FP": 55072,
+                    "IoU": 0.8192751785581807,
+                    "TN": 16184132,
+                    "TP": 485899,
+                    "n_pred": 540971,
+                    "n_ref": 538012
+                },
+                "3": {
+                    "Dice": 0.9389541325060935,
+                    "FN": 7699,
+                    "FP": 7729,
+                    "IoU": 0.8849326511433643,
+                    "TN": 16643138,
+                    "TP": 118650,
+                    "n_pred": 126379,
+                    "n_ref": 126349
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30016_ses-d0021_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30016_ses-d0021_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3867862293935233,
+                    "FN": 321864,
+                    "FP": 386458,
+                    "IoU": 0.23976129911667793,
+                    "TN": 15845506,
+                    "TP": 223388,
+                    "n_pred": 609846,
+                    "n_ref": 545252
+                },
+                "2": {
+                    "Dice": 0.647918439595602,
+                    "FN": 41428,
+                    "FP": 372296,
+                    "IoU": 0.4792007069468607,
+                    "TN": 15982814,
+                    "TP": 380678,
+                    "n_pred": 752974,
+                    "n_ref": 422106
+                },
+                "3": {
+                    "Dice": 0.7850875653669322,
+                    "FN": 14292,
+                    "FP": 10202,
+                    "IoU": 0.646209177704274,
+                    "TN": 16707983,
+                    "TP": 44739,
+                    "n_pred": 54941,
+                    "n_ref": 59031
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30018_ses-d0070_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30018_ses-d0070_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7672129260607455,
+                    "FN": 54092,
+                    "FP": 188599,
+                    "IoU": 0.6223401772125897,
+                    "TN": 16134598,
+                    "TP": 399927,
+                    "n_pred": 588526,
+                    "n_ref": 454019
+                },
+                "2": {
+                    "Dice": 0.8918512427098324,
+                    "FN": 40367,
+                    "FP": 49588,
+                    "IoU": 0.8048118421309587,
+                    "TN": 16316353,
+                    "TP": 370908,
+                    "n_pred": 420496,
+                    "n_ref": 411275
+                },
+                "3": {
+                    "Dice": 0.894370718236903,
+                    "FN": 5311,
+                    "FP": 6700,
+                    "IoU": 0.8089245943366211,
+                    "TN": 16714356,
+                    "TP": 50849,
+                    "n_pred": 57549,
+                    "n_ref": 56160
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30033_ses-d1267_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30033_ses-d1267_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7545111041855301,
+                    "FN": 77523,
+                    "FP": 188721,
+                    "IoU": 0.6057951272958787,
+                    "TN": 16101821,
+                    "TP": 409151,
+                    "n_pred": 597872,
+                    "n_ref": 486674
+                },
+                "2": {
+                    "Dice": 0.863615410806422,
+                    "FN": 30941,
+                    "FP": 73205,
+                    "IoU": 0.7599675488553366,
+                    "TN": 16343333,
+                    "TP": 329737,
+                    "n_pred": 402942,
+                    "n_ref": 360678
+                },
+                "3": {
+                    "Dice": 0.8795196680058276,
+                    "FN": 4038,
+                    "FP": 6878,
+                    "IoU": 0.7849487785657998,
+                    "TN": 16726456,
+                    "TP": 39844,
+                    "n_pred": 46722,
+                    "n_ref": 43882
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30035_ses-d2218_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30035_ses-d2218_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.825125198622775,
+                    "FN": 64391,
+                    "FP": 153297,
+                    "IoU": 0.7023090440407245,
+                    "TN": 16045961,
+                    "TP": 513567,
+                    "n_pred": 666864,
+                    "n_ref": 577958
+                },
+                "2": {
+                    "Dice": 0.9023344234342269,
+                    "FN": 33209,
+                    "FP": 57519,
+                    "IoU": 0.8220485753569208,
+                    "TN": 16267369,
+                    "TP": 419119,
+                    "n_pred": 476638,
+                    "n_ref": 452328
+                },
+                "3": {
+                    "Dice": 0.8903033430815988,
+                    "FN": 4449,
+                    "FP": 7029,
+                    "IoU": 0.8022943365026871,
+                    "TN": 16719160,
+                    "TP": 46578,
+                    "n_pred": 53607,
+                    "n_ref": 51027
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30043_ses-d0145_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30043_ses-d0145_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5213437441969457,
+                    "FN": 251544,
+                    "FP": 289754,
+                    "IoU": 0.35257940589701514,
+                    "TN": 15941132,
+                    "TP": 294786,
+                    "n_pred": 584540,
+                    "n_ref": 546330
+                },
+                "2": {
+                    "Dice": 0.7257547542463744,
+                    "FN": 38510,
+                    "FP": 253084,
+                    "IoU": 0.5695565721472572,
+                    "TN": 16099789,
+                    "TP": 385833,
+                    "n_pred": 638917,
+                    "n_ref": 424343
+                },
+                "3": {
+                    "Dice": 0.7440707201379905,
+                    "FN": 4203,
+                    "FP": 2919,
+                    "IoU": 0.5924463519313304,
+                    "TN": 16759741,
+                    "TP": 10353,
+                    "n_pred": 13272,
+                    "n_ref": 14556
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30052_ses-d2709_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30052_ses-d2709_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7612913242753192,
+                    "FN": 98730,
+                    "FP": 211835,
+                    "IoU": 0.6145846389829646,
+                    "TN": 15971423,
+                    "TP": 495228,
+                    "n_pred": 707063,
+                    "n_ref": 593958
+                },
+                "2": {
+                    "Dice": 0.8411187033276984,
+                    "FN": 89419,
+                    "FP": 64812,
+                    "IoU": 0.7258022937663672,
+                    "TN": 16214735,
+                    "TP": 408250,
+                    "n_pred": 473062,
+                    "n_ref": 497669
+                },
+                "3": {
+                    "Dice": 0.7979545043142461,
+                    "FN": 5815,
+                    "FP": 7579,
+                    "IoU": 0.6638305348492834,
+                    "TN": 16737373,
+                    "TP": 26449,
+                    "n_pred": 34028,
+                    "n_ref": 32264
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30053_ses-d0428_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30053_ses-d0428_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3913618748943158,
+                    "FN": 344322,
+                    "FP": 353960,
+                    "IoU": 0.24328770329784652,
+                    "TN": 15854432,
+                    "TP": 224502,
+                    "n_pred": 578462,
+                    "n_ref": 568824
+                },
+                "2": {
+                    "Dice": 0.7080179843552716,
+                    "FN": 18912,
+                    "FP": 339759,
+                    "IoU": 0.5480091640454875,
+                    "TN": 15983680,
+                    "TP": 434865,
+                    "n_pred": 774624,
+                    "n_ref": 453777
+                },
+                "3": {
+                    "Dice": 0.8616903210643826,
+                    "FN": 15557,
+                    "FP": 5629,
+                    "IoU": 0.7569911220206006,
+                    "TN": 16690034,
+                    "TP": 65996,
+                    "n_pred": 71625,
+                    "n_ref": 81553
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30061_ses-d0035_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30061_ses-d0035_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.840505565529623,
+                    "FN": 62252,
+                    "FP": 159844,
+                    "IoU": 0.724889693768596,
+                    "TN": 15969918,
+                    "TP": 585202,
+                    "n_pred": 745046,
+                    "n_ref": 647454
+                },
+                "2": {
+                    "Dice": 0.9090114652254211,
+                    "FN": 45376,
+                    "FP": 51039,
+                    "IoU": 0.8331998332257836,
+                    "TN": 16199189,
+                    "TP": 481612,
+                    "n_pred": 532651,
+                    "n_ref": 526988
+                },
+                "3": {
+                    "Dice": 0.9158869738539102,
+                    "FN": 6539,
+                    "FP": 7809,
+                    "IoU": 0.8448260944800139,
+                    "TN": 16684752,
+                    "TP": 78116,
+                    "n_pred": 85925,
+                    "n_ref": 84655
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30070_ses-d0070_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30070_ses-d0070_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5993869137491743,
+                    "FN": 250762,
+                    "FP": 292636,
+                    "IoU": 0.4279461041975688,
+                    "TN": 15827309,
+                    "TP": 406509,
+                    "n_pred": 699145,
+                    "n_ref": 657271
+                },
+                "2": {
+                    "Dice": 0.786293101623272,
+                    "FN": 30919,
+                    "FP": 241640,
+                    "IoU": 0.6478443046462861,
+                    "TN": 16003243,
+                    "TP": 501414,
+                    "n_pred": 743054,
+                    "n_ref": 532333
+                },
+                "3": {
+                    "Dice": 0.8628864935985021,
+                    "FN": 5355,
+                    "FP": 5483,
+                    "IoU": 0.75883936717029,
+                    "TN": 16732275,
+                    "TP": 34103,
+                    "n_pred": 39586,
+                    "n_ref": 39458
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30073_ses-d1587_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30073_ses-d1587_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4957336346244489,
+                    "FN": 257318,
+                    "FP": 324678,
+                    "IoU": 0.32955176425864274,
+                    "TN": 15909146,
+                    "TP": 286074,
+                    "n_pred": 610752,
+                    "n_ref": 543392
+                },
+                "2": {
+                    "Dice": 0.7471626654109736,
+                    "FN": 37438,
+                    "FP": 262175,
+                    "IoU": 0.5963764367351557,
+                    "TN": 16034908,
+                    "TP": 442695,
+                    "n_pred": 704870,
+                    "n_ref": 480133
+                },
+                "3": {
+                    "Dice": 0.8528232171462647,
+                    "FN": 4930,
+                    "FP": 7657,
+                    "IoU": 0.743410457649577,
+                    "TN": 16728161,
+                    "TP": 36468,
+                    "n_pred": 44125,
+                    "n_ref": 41398
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30074_ses-d2812_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30074_ses-d2812_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5794273088493209,
+                    "FN": 221911,
+                    "FP": 278319,
+                    "IoU": 0.4078828999450768,
+                    "TN": 15932400,
+                    "TP": 344586,
+                    "n_pred": 622905,
+                    "n_ref": 566497
+                },
+                "2": {
+                    "Dice": 0.783996917853574,
+                    "FN": 29485,
+                    "FP": 221689,
+                    "IoU": 0.6447326732673268,
+                    "TN": 16070216,
+                    "TP": 455826,
+                    "n_pred": 677515,
+                    "n_ref": 485311
+                },
+                "3": {
+                    "Dice": 0.7927975498996727,
+                    "FN": 3177,
+                    "FP": 4671,
+                    "IoU": 0.6567229463738955,
+                    "TN": 16754354,
+                    "TP": 15014,
+                    "n_pred": 19685,
+                    "n_ref": 18191
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30076_ses-d0534_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30076_ses-d0534_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.48257640170048927,
+                    "FN": 301128,
+                    "FP": 343944,
+                    "IoU": 0.31802352503367215,
+                    "TN": 15831330,
+                    "TP": 300814,
+                    "n_pred": 644758,
+                    "n_ref": 601942
+                },
+                "2": {
+                    "Dice": 0.496210547671262,
+                    "FN": 228566,
+                    "FP": 188616,
+                    "IoU": 0.3299734194190818,
+                    "TN": 16154581,
+                    "TP": 205453,
+                    "n_pred": 394069,
+                    "n_ref": 434019
+                },
+                "3": {
+                    "Dice": 0.4275094540382763,
+                    "FN": 28970,
+                    "FP": 10845,
+                    "IoU": 0.27186774199447705,
+                    "TN": 16722535,
+                    "TP": 14866,
+                    "n_pred": 25711,
+                    "n_ref": 43836
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30103_sess-d7334_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30103_sess-d7334_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8479230127132162,
+                    "FN": 30685,
+                    "FP": 143304,
+                    "IoU": 0.7359950958747384,
+                    "TN": 16118179,
+                    "TP": 485048,
+                    "n_pred": 628352,
+                    "n_ref": 515733
+                },
+                "2": {
+                    "Dice": 0.9220384061760521,
+                    "FN": 51517,
+                    "FP": 23172,
+                    "IoU": 0.8553536707232994,
+                    "TN": 16260860,
+                    "TP": 441667,
+                    "n_pred": 464839,
+                    "n_ref": 493184
+                },
+                "3": {
+                    "Dice": 0.8818539686722777,
+                    "FN": 2837,
+                    "FP": 4336,
+                    "IoU": 0.7886751318386707,
+                    "TN": 16743273,
+                    "TP": 26770,
+                    "n_pred": 31106,
+                    "n_ref": 29607
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30109_ses-d0997_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30109_ses-d0997_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5379837501603064,
+                    "FN": 221978,
+                    "FP": 285989,
+                    "IoU": 0.36797385132982957,
+                    "TN": 15973504,
+                    "TP": 295745,
+                    "n_pred": 581734,
+                    "n_ref": 517723
+                },
+                "2": {
+                    "Dice": 0.772367971758774,
+                    "FN": 40170,
+                    "FP": 227818,
+                    "IoU": 0.6291526727803863,
+                    "TN": 16054579,
+                    "TP": 454649,
+                    "n_pred": 682467,
+                    "n_ref": 494819
+                },
+                "3": {
+                    "Dice": 0.8397987732702034,
+                    "FN": 5603,
+                    "FP": 6307,
+                    "IoU": 0.7238388944280845,
+                    "TN": 16734089,
+                    "TP": 31217,
+                    "n_pred": 37524,
+                    "n_ref": 36820
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30121_ses-d2392_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30121_ses-d2392_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4388487927788003,
+                    "FN": 290272,
+                    "FP": 371621,
+                    "IoU": 0.28110588567518546,
+                    "TN": 15856506,
+                    "TP": 258817,
+                    "n_pred": 630438,
+                    "n_ref": 549089
+                },
+                "2": {
+                    "Dice": 0.7279184115507764,
+                    "FN": 51417,
+                    "FP": 323922,
+                    "IoU": 0.5722261985083609,
+                    "TN": 15899792,
+                    "TP": 502085,
+                    "n_pred": 826007,
+                    "n_ref": 553502
+                },
+                "3": {
+                    "Dice": 0.7407617228597789,
+                    "FN": 17911,
+                    "FP": 14121,
+                    "IoU": 0.588261758165482,
+                    "TN": 16699419,
+                    "TP": 45765,
+                    "n_pred": 59886,
+                    "n_ref": 63676
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30134_sess-d2927_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30134_sess-d2927_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.716506952693108,
+                    "FN": 114871,
+                    "FP": 202559,
+                    "IoU": 0.5582476307109955,
+                    "TN": 16058646,
+                    "TP": 401140,
+                    "n_pred": 603699,
+                    "n_ref": 516011
+                },
+                "2": {
+                    "Dice": 0.8016661576188124,
+                    "FN": 86374,
+                    "FP": 71421,
+                    "IoU": 0.6689839919949486,
+                    "TN": 16300517,
+                    "TP": 318904,
+                    "n_pred": 390325,
+                    "n_ref": 405278
+                },
+                "3": {
+                    "Dice": 0.648108247866931,
+                    "FN": 3395,
+                    "FP": 4771,
+                    "IoU": 0.4794083896468188,
+                    "TN": 16761530,
+                    "TP": 7520,
+                    "n_pred": 12291,
+                    "n_ref": 10915
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30135_ses-d0341_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30135_ses-d0341_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5802136000041944,
+                    "FN": 235178,
+                    "FP": 245218,
+                    "IoU": 0.40866259882888617,
+                    "TN": 15964827,
+                    "TP": 331993,
+                    "n_pred": 577211,
+                    "n_ref": 567171
+                },
+                "2": {
+                    "Dice": 0.711713525241003,
+                    "FN": 57901,
+                    "FP": 251435,
+                    "IoU": 0.5524497378381193,
+                    "TN": 16086040,
+                    "TP": 381840,
+                    "n_pred": 633275,
+                    "n_ref": 439741
+                },
+                "3": {
+                    "Dice": 0.6760790902041871,
+                    "FN": 4527,
+                    "FP": 5499,
+                    "IoU": 0.5106642588706135,
+                    "TN": 16756727,
+                    "TP": 10463,
+                    "n_pred": 15962,
+                    "n_ref": 14990
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30137_sess-d5772_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30137_sess-d5772_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8342065594658293,
+                    "FN": 32504,
+                    "FP": 157992,
+                    "IoU": 0.7155697831715307,
+                    "TN": 16107470,
+                    "TP": 479250,
+                    "n_pred": 637242,
+                    "n_ref": 511754
+                },
+                "2": {
+                    "Dice": 0.9210866305811797,
+                    "FN": 53065,
+                    "FP": 24568,
+                    "IoU": 0.8537169495613374,
+                    "TN": 16246512,
+                    "TP": 453071,
+                    "n_pred": 477639,
+                    "n_ref": 506136
+                },
+                "3": {
+                    "Dice": 0.8929687680874215,
+                    "FN": 3072,
+                    "FP": 6174,
+                    "IoU": 0.8066337627572361,
+                    "TN": 16729400,
+                    "TP": 38570,
+                    "n_pred": 44744,
+                    "n_ref": 41642
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30138_sess-d0074_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30138_sess-d0074_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5427111864352324,
+                    "FN": 243712,
+                    "FP": 325608,
+                    "IoU": 0.3724115503965695,
+                    "TN": 15870061,
+                    "TP": 337835,
+                    "n_pred": 663443,
+                    "n_ref": 581547
+                },
+                "2": {
+                    "Dice": 0.7708493633976387,
+                    "FN": 48614,
+                    "FP": 248604,
+                    "IoU": 0.6271398642630437,
+                    "TN": 15980086,
+                    "TP": 499912,
+                    "n_pred": 748516,
+                    "n_ref": 548526
+                },
+                "3": {
+                    "Dice": 0.7646003262642741,
+                    "FN": 4809,
+                    "FP": 6735,
+                    "IoU": 0.6189092829790044,
+                    "TN": 16746924,
+                    "TP": 18748,
+                    "n_pred": 25483,
+                    "n_ref": 23557
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30141_ses-d0544_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30141_ses-d0544_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.49977294067151445,
+                    "FN": 199997,
+                    "FP": 402542,
+                    "IoU": 0.33313153336616735,
+                    "TN": 15873681,
+                    "TP": 300996,
+                    "n_pred": 703538,
+                    "n_ref": 500993
+                },
+                "2": {
+                    "Dice": 0.7032805199094627,
+                    "FN": 114758,
+                    "FP": 190688,
+                    "IoU": 0.5423536321520823,
+                    "TN": 16109788,
+                    "TP": 361982,
+                    "n_pred": 552670,
+                    "n_ref": 476740
+                },
+                "3": {
+                    "Dice": 0.8616162969640123,
+                    "FN": 19693,
+                    "FP": 14388,
+                    "IoU": 0.7568768725923812,
+                    "TN": 16637036,
+                    "TP": 106099,
+                    "n_pred": 120487,
+                    "n_ref": 125792
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30145_ses-d4247_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30145_ses-d4247_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.43563118282276536,
+                    "FN": 268691,
+                    "FP": 291826,
+                    "IoU": 0.27847089384511214,
+                    "TN": 16000370,
+                    "TP": 216329,
+                    "n_pred": 508155,
+                    "n_ref": 485020
+                },
+                "2": {
+                    "Dice": 0.7303206320134189,
+                    "FN": 19799,
+                    "FP": 270561,
+                    "IoU": 0.5752008345000826,
+                    "TN": 16093693,
+                    "TP": 393163,
+                    "n_pred": 663724,
+                    "n_ref": 412962
+                },
+                "3": {
+                    "Dice": 0.8720273823106305,
+                    "FN": 7657,
+                    "FP": 5242,
+                    "IoU": 0.7730926873889563,
+                    "TN": 16720369,
+                    "TP": 43948,
+                    "n_pred": 49190,
+                    "n_ref": 51605
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30150_ses-d0100_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30150_ses-d0100_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7568445323190653,
+                    "FN": 99603,
+                    "FP": 263068,
+                    "IoU": 0.6088092374567871,
+                    "TN": 15850121,
+                    "TP": 564424,
+                    "n_pred": 827492,
+                    "n_ref": 664027
+                },
+                "2": {
+                    "Dice": 0.8617917108943122,
+                    "FN": 83026,
+                    "FP": 71007,
+                    "IoU": 0.7571476320660417,
+                    "TN": 16142950,
+                    "TP": 480233,
+                    "n_pred": 551240,
+                    "n_ref": 563259
+                },
+                "3": {
+                    "Dice": 0.7573107049608355,
+                    "FN": 4313,
+                    "FP": 6841,
+                    "IoU": 0.6094127534404874,
+                    "TN": 16748659,
+                    "TP": 17403,
+                    "n_pred": 24244,
+                    "n_ref": 21716
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30164_ses-d0233_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30164_ses-d0233_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5246840327088561,
+                    "FN": 248518,
+                    "FP": 337866,
+                    "IoU": 0.35564180442799564,
+                    "TN": 15867188,
+                    "TP": 323644,
+                    "n_pred": 661510,
+                    "n_ref": 572162
+                },
+                "2": {
+                    "Dice": 0.6552521333105563,
+                    "FN": 125197,
+                    "FP": 298605,
+                    "IoU": 0.48726765034673997,
+                    "TN": 15950660,
+                    "TP": 402754,
+                    "n_pred": 701359,
+                    "n_ref": 527951
+                },
+                "3": {
+                    "Dice": 0.6129893362776202,
+                    "FN": 14762,
+                    "FP": 12929,
+                    "IoU": 0.44194998085487996,
+                    "TN": 16727595,
+                    "TP": 21930,
+                    "n_pred": 34859,
+                    "n_ref": 36692
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30165_ses-d0563_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30165_ses-d0563_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8608830205452144,
+                    "FN": 35435,
+                    "FP": 131700,
+                    "IoU": 0.7557459295859658,
+                    "TN": 16092949,
+                    "TP": 517132,
+                    "n_pred": 648832,
+                    "n_ref": 552567
+                },
+                "2": {
+                    "Dice": 0.9242968285752259,
+                    "FN": 40198,
+                    "FP": 28723,
+                    "IoU": 0.859248957452631,
+                    "TN": 16287550,
+                    "TP": 420745,
+                    "n_pred": 449468,
+                    "n_ref": 460943
+                },
+                "3": {
+                    "Dice": 0.7841136168998002,
+                    "FN": 2222,
+                    "FP": 3828,
+                    "IoU": 0.6448905323707226,
+                    "TN": 16760179,
+                    "TP": 10987,
+                    "n_pred": 14815,
+                    "n_ref": 13209
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30168_ses-d0059_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30168_ses-d0059_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.459539815610339,
+                    "FN": 317011,
+                    "FP": 360478,
+                    "IoU": 0.29831333537024285,
+                    "TN": 15811701,
+                    "TP": 288026,
+                    "n_pred": 648504,
+                    "n_ref": 605037
+                },
+                "2": {
+                    "Dice": 0.7386397399904194,
+                    "FN": 31759,
+                    "FP": 313063,
+                    "IoU": 0.5855898298118327,
+                    "TN": 15945137,
+                    "TP": 487257,
+                    "n_pred": 800320,
+                    "n_ref": 519016
+                },
+                "3": {
+                    "Dice": 0.8644122942107889,
+                    "FN": 11692,
+                    "FP": 7061,
+                    "IoU": 0.7612025824196814,
+                    "TN": 16698685,
+                    "TP": 59778,
+                    "n_pred": 66839,
+                    "n_ref": 71470
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30171_ses-d0139_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30171_ses-d0139_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7508172893459498,
+                    "FN": 89975,
+                    "FP": 217582,
+                    "IoU": 0.6010468148032845,
+                    "TN": 16006306,
+                    "TP": 463353,
+                    "n_pred": 680935,
+                    "n_ref": 553328
+                },
+                "2": {
+                    "Dice": 0.856271972367456,
+                    "FN": 98166,
+                    "FP": 53715,
+                    "IoU": 0.7486674731053793,
+                    "TN": 16172913,
+                    "TP": 452422,
+                    "n_pred": 506137,
+                    "n_ref": 550588
+                },
+                "3": {
+                    "Dice": 0.8701599295175235,
+                    "FN": 3195,
+                    "FP": 5500,
+                    "IoU": 0.770162036425154,
+                    "TN": 16739385,
+                    "TP": 29136,
+                    "n_pred": 34636,
+                    "n_ref": 32331
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30172_ses-d0028_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30172_ses-d0028_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.824768773011144,
+                    "FN": 50579,
+                    "FP": 133991,
+                    "IoU": 0.7017927656026833,
+                    "TN": 16158284,
+                    "TP": 434362,
+                    "n_pred": 568353,
+                    "n_ref": 484941
+                },
+                "2": {
+                    "Dice": 0.899211385811146,
+                    "FN": 37223,
+                    "FP": 40789,
+                    "IoU": 0.8168792574891905,
+                    "TN": 16351202,
+                    "TP": 348002,
+                    "n_pred": 388791,
+                    "n_ref": 385225
+                },
+                "3": {
+                    "Dice": 0.8797758929266205,
+                    "FN": 3773,
+                    "FP": 7042,
+                    "IoU": 0.7853570436232287,
+                    "TN": 16726830,
+                    "TP": 39571,
+                    "n_pred": 46613,
+                    "n_ref": 43344
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30173_ses-d3841_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30173_ses-d3841_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6798182750545648,
+                    "FN": 157002,
+                    "FP": 269449,
+                    "IoU": 0.5149429523292807,
+                    "TN": 15898039,
+                    "TP": 452726,
+                    "n_pred": 722175,
+                    "n_ref": 609728
+                },
+                "2": {
+                    "Dice": 0.7495892873118245,
+                    "FN": 136443,
+                    "FP": 109875,
+                    "IoU": 0.599474460435749,
+                    "TN": 16162229,
+                    "TP": 368669,
+                    "n_pred": 478544,
+                    "n_ref": 505112
+                },
+                "3": {
+                    "Dice": 0.7116322055705562,
+                    "FN": 6610,
+                    "FP": 9303,
+                    "IoU": 0.5523517497468212,
+                    "TN": 16741668,
+                    "TP": 19635,
+                    "n_pred": 28938,
+                    "n_ref": 26245
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30178_ses-d0516_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30178_ses-d0516_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5564948111773831,
+                    "FN": 198916,
+                    "FP": 250502,
+                    "IoU": 0.38551632199624,
+                    "TN": 16045841,
+                    "TP": 281957,
+                    "n_pred": 532459,
+                    "n_ref": 480873
+                },
+                "2": {
+                    "Dice": 0.7656061950896618,
+                    "FN": 49848,
+                    "FP": 199442,
+                    "IoU": 0.6202284814166518,
+                    "TN": 16120795,
+                    "TP": 407131,
+                    "n_pred": 606573,
+                    "n_ref": 456979
+                },
+                "3": {
+                    "Dice": 0.7241843047193429,
+                    "FN": 3726,
+                    "FP": 9605,
+                    "IoU": 0.5676245459263103,
+                    "TN": 16746384,
+                    "TP": 17501,
+                    "n_pred": 27106,
+                    "n_ref": 21227
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30179_ses-d0061_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30179_ses-d0061_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8499900957845594,
+                    "FN": 31432,
+                    "FP": 128359,
+                    "IoU": 0.7391154568920337,
+                    "TN": 16164719,
+                    "TP": 452706,
+                    "n_pred": 581065,
+                    "n_ref": 484138
+                },
+                "2": {
+                    "Dice": 0.9167563199478145,
+                    "FN": 43852,
+                    "FP": 24548,
+                    "IoU": 0.8463066407215499,
+                    "TN": 16332174,
+                    "TP": 376642,
+                    "n_pred": 401190,
+                    "n_ref": 420494
+                },
+                "3": {
+                    "Dice": 0.8884079054749316,
+                    "FN": 2106,
+                    "FP": 4184,
+                    "IoU": 0.7992211440245148,
+                    "TN": 16745888,
+                    "TP": 25038,
+                    "n_pred": 29222,
+                    "n_ref": 27144
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30184_ses-d0876_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30184_ses-d0876_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8041581185937907,
+                    "FN": 52221,
+                    "FP": 149870,
+                    "IoU": 0.6724619124797406,
+                    "TN": 16160216,
+                    "TP": 414909,
+                    "n_pred": 564779,
+                    "n_ref": 467130
+                },
+                "2": {
+                    "Dice": 0.8966726346233301,
+                    "FN": 27144,
+                    "FP": 47882,
+                    "IoU": 0.8126986266829438,
+                    "TN": 16376653,
+                    "TP": 325537,
+                    "n_pred": 373419,
+                    "n_ref": 352681
+                },
+                "3": {
+                    "Dice": 0.8949784090600472,
+                    "FN": 2578,
+                    "FP": 5156,
+                    "IoU": 0.8099193865513173,
+                    "TN": 16736528,
+                    "TP": 32954,
+                    "n_pred": 38110,
+                    "n_ref": 35532
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30189_ses-d0072_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30189_ses-d0072_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.601254958949519,
+                    "FN": 212138,
+                    "FP": 361883,
+                    "IoU": 0.42985314786028933,
+                    "TN": 15770421,
+                    "TP": 432774,
+                    "n_pred": 794657,
+                    "n_ref": 644912
+                },
+                "2": {
+                    "Dice": 0.6939120693626486,
+                    "FN": 193766,
+                    "FP": 166359,
+                    "IoU": 0.5312904691064941,
+                    "TN": 16008883,
+                    "TP": 408208,
+                    "n_pred": 574567,
+                    "n_ref": 601974
+                },
+                "3": {
+                    "Dice": 0.6277395363557243,
+                    "FN": 7853,
+                    "FP": 10967,
+                    "IoU": 0.4574492619926199,
+                    "TN": 16742528,
+                    "TP": 15868,
+                    "n_pred": 26835,
+                    "n_ref": 23721
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30200_ses-d0075_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30200_ses-d0075_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.45622662743958964,
+                    "FN": 253090,
+                    "FP": 314151,
+                    "IoU": 0.29552694427091936,
+                    "TN": 15972017,
+                    "TP": 237958,
+                    "n_pred": 552109,
+                    "n_ref": 491048
+                },
+                "2": {
+                    "Dice": 0.7763953016210119,
+                    "FN": 20020,
+                    "FP": 250359,
+                    "IoU": 0.6345148091124265,
+                    "TN": 16037435,
+                    "TP": 469402,
+                    "n_pred": 719761,
+                    "n_ref": 489422
+                },
+                "3": {
+                    "Dice": 0.8612721030676659,
+                    "FN": 9567,
+                    "FP": 5465,
+                    "IoU": 0.7563458358997633,
+                    "TN": 16715522,
+                    "TP": 46662,
+                    "n_pred": 52127,
+                    "n_ref": 56229
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30202_ses-d0175_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30202_ses-d0175_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8073834725573859,
+                    "FN": 51666,
+                    "FP": 169671,
+                    "IoU": 0.676984977131499,
+                    "TN": 16091994,
+                    "TP": 463885,
+                    "n_pred": 633556,
+                    "n_ref": 515551
+                },
+                "2": {
+                    "Dice": 0.8999821638270442,
+                    "FN": 38317,
+                    "FP": 45236,
+                    "IoU": 0.8181523373822277,
+                    "TN": 16317749,
+                    "TP": 375914,
+                    "n_pred": 421150,
+                    "n_ref": 414231
+                },
+                "3": {
+                    "Dice": 0.8781149683952741,
+                    "FN": 2443,
+                    "FP": 4923,
+                    "IoU": 0.7827138643067847,
+                    "TN": 16743316,
+                    "TP": 26534,
+                    "n_pred": 31457,
+                    "n_ref": 28977
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30205_ses-d0061_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30205_ses-d0061_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8255184159891577,
+                    "FN": 48073,
+                    "FP": 163577,
+                    "IoU": 0.7028789784596033,
+                    "TN": 16064880,
+                    "TP": 500686,
+                    "n_pred": 664263,
+                    "n_ref": 548759
+                },
+                "2": {
+                    "Dice": 0.9009507211275583,
+                    "FN": 36352,
+                    "FP": 49693,
+                    "IoU": 0.8197546174197752,
+                    "TN": 16299839,
+                    "TP": 391332,
+                    "n_pred": 441025,
+                    "n_ref": 427684
+                },
+                "3": {
+                    "Dice": 0.848715472281244,
+                    "FN": 2895,
+                    "FP": 4937,
+                    "IoU": 0.7371900271802959,
+                    "TN": 16747415,
+                    "TP": 21969,
+                    "n_pred": 26906,
+                    "n_ref": 24864
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30207_sess-d2812_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30207_sess-d2812_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.43657141843908753,
+                    "FN": 309561,
+                    "FP": 325947,
+                    "IoU": 0.2792397577913145,
+                    "TN": 15895497,
+                    "TP": 246211,
+                    "n_pred": 572158,
+                    "n_ref": 555772
+                },
+                "2": {
+                    "Dice": 0.7046984734659272,
+                    "FN": 25878,
+                    "FP": 311975,
+                    "IoU": 0.5440420311643863,
+                    "TN": 16036242,
+                    "TP": 403121,
+                    "n_pred": 715096,
+                    "n_ref": 428999
+                },
+                "3": {
+                    "Dice": 0.8538941190854628,
+                    "FN": 5503,
+                    "FP": 5252,
+                    "IoU": 0.7450394708768935,
+                    "TN": 16735033,
+                    "TP": 31428,
+                    "n_pred": 36680,
+                    "n_ref": 36931
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30208_ses-d0436_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30208_ses-d0436_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.47236440835186244,
+                    "FN": 254253,
+                    "FP": 323098,
+                    "IoU": 0.3092127539672189,
+                    "TN": 15941429,
+                    "TP": 258436,
+                    "n_pred": 581534,
+                    "n_ref": 512689
+                },
+                "2": {
+                    "Dice": 0.619930395480226,
+                    "FN": 134979,
+                    "FP": 285473,
+                    "IoU": 0.4492022673711045,
+                    "TN": 16013865,
+                    "TP": 342899,
+                    "n_pred": 628372,
+                    "n_ref": 477878
+                },
+                "3": {
+                    "Dice": 0.3728501839149021,
+                    "FN": 12349,
+                    "FP": 12885,
+                    "IoU": 0.229143118985795,
+                    "TN": 16744481,
+                    "TP": 7501,
+                    "n_pred": 20386,
+                    "n_ref": 19850
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30228_sess-d1211_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30228_sess-d1211_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6303704556167402,
+                    "FN": 192429,
+                    "FP": 276503,
+                    "IoU": 0.46024887401256687,
+                    "TN": 15908423,
+                    "TP": 399861,
+                    "n_pred": 676364,
+                    "n_ref": 592290
+                },
+                "2": {
+                    "Dice": 0.8112386558667004,
+                    "FN": 46932,
+                    "FP": 193052,
+                    "IoU": 0.6824234821146183,
+                    "TN": 16021543,
+                    "TP": 515689,
+                    "n_pred": 708741,
+                    "n_ref": 562621
+                },
+                "3": {
+                    "Dice": 0.801878485471089,
+                    "FN": 3587,
+                    "FP": 5188,
+                    "IoU": 0.6692797648211661,
+                    "TN": 16750683,
+                    "TP": 17758,
+                    "n_pred": 22946,
+                    "n_ref": 21345
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30231_ses-d3617_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30231_ses-d3617_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5770705592501343,
+                    "FN": 220671,
+                    "FP": 258780,
+                    "IoU": 0.40555107141927255,
+                    "TN": 15970669,
+                    "TP": 327096,
+                    "n_pred": 585876,
+                    "n_ref": 547767
+                },
+                "2": {
+                    "Dice": 0.7786153464588573,
+                    "FN": 26874,
+                    "FP": 220381,
+                    "IoU": 0.6374857782938644,
+                    "TN": 16095160,
+                    "TP": 434801,
+                    "n_pred": 655182,
+                    "n_ref": 461675
+                },
+                "3": {
+                    "Dice": 0.8431333064840918,
+                    "FN": 5002,
+                    "FP": 5904,
+                    "IoU": 0.7288076588337685,
+                    "TN": 16737001,
+                    "TP": 29309,
+                    "n_pred": 35213,
+                    "n_ref": 34311
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30232_ses-d0695_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30232_ses-d0695_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8457444441972727,
+                    "FN": 31313,
+                    "FP": 135109,
+                    "IoU": 0.7327185387547037,
+                    "TN": 16154569,
+                    "TP": 456225,
+                    "n_pred": 591334,
+                    "n_ref": 487538
+                },
+                "2": {
+                    "Dice": 0.9137717503440906,
+                    "FN": 44001,
+                    "FP": 26041,
+                    "IoU": 0.8412336455377138,
+                    "TN": 16336052,
+                    "TP": 371122,
+                    "n_pred": 397163,
+                    "n_ref": 415123
+                },
+                "3": {
+                    "Dice": 0.8668569680905291,
+                    "FN": 1990,
+                    "FP": 3234,
+                    "IoU": 0.7650022492127755,
+                    "TN": 16754986,
+                    "TP": 17006,
+                    "n_pred": 20240,
+                    "n_ref": 18996
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30233_ses-d3867_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30233_ses-d3867_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8530484828432428,
+                    "FN": 38917,
+                    "FP": 159171,
+                    "IoU": 0.7437528701805223,
+                    "TN": 16004181,
+                    "TP": 574947,
+                    "n_pred": 734118,
+                    "n_ref": 613864
+                },
+                "2": {
+                    "Dice": 0.9241351480245057,
+                    "FN": 54358,
+                    "FP": 28362,
+                    "IoU": 0.8589695502438026,
+                    "TN": 16190676,
+                    "TP": 503820,
+                    "n_pred": 532182,
+                    "n_ref": 558178
+                },
+                "3": {
+                    "Dice": 0.8745591059891741,
+                    "FN": 3006,
+                    "FP": 4178,
+                    "IoU": 0.7770813293201353,
+                    "TN": 16744989,
+                    "TP": 25043,
+                    "n_pred": 29221,
+                    "n_ref": 28049
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30235_ses-d0139_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30235_ses-d0139_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7960894299511634,
+                    "FN": 55153,
+                    "FP": 213782,
+                    "IoU": 0.6612529616040085,
+                    "TN": 15983305,
+                    "TP": 524976,
+                    "n_pred": 738758,
+                    "n_ref": 580129
+                },
+                "2": {
+                    "Dice": 0.9005723522667873,
+                    "FN": 65848,
+                    "FP": 47329,
+                    "IoU": 0.8191283474847818,
+                    "TN": 16151485,
+                    "TP": 512554,
+                    "n_pred": 559883,
+                    "n_ref": 578402
+                },
+                "3": {
+                    "Dice": 0.9092847623278543,
+                    "FN": 5006,
+                    "FP": 7246,
+                    "IoU": 0.8336591723688498,
+                    "TN": 16703560,
+                    "TP": 61404,
+                    "n_pred": 68650,
+                    "n_ref": 66410
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30244_ses-d1526_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30244_ses-d1526_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.852261408367116,
+                    "FN": 39149,
+                    "FP": 124154,
+                    "IoU": 0.7425570722986724,
+                    "TN": 16142889,
+                    "TP": 471024,
+                    "n_pred": 595178,
+                    "n_ref": 510173
+                },
+                "2": {
+                    "Dice": 0.9094840707764222,
+                    "FN": 41858,
+                    "FP": 30098,
+                    "IoU": 0.8339943015999354,
+                    "TN": 16343761,
+                    "TP": 361499,
+                    "n_pred": 391597,
+                    "n_ref": 403357
+                },
+                "3": {
+                    "Dice": 0.912893393205704,
+                    "FN": 3377,
+                    "FP": 5682,
+                    "IoU": 0.8397459710944825,
+                    "TN": 16720687,
+                    "TP": 47470,
+                    "n_pred": 53152,
+                    "n_ref": 50847
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30247_ses-d0168_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30247_ses-d0168_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4502011491562347,
+                    "FN": 318509,
+                    "FP": 386133,
+                    "IoU": 0.2904900522484768,
+                    "TN": 15784077,
+                    "TP": 288497,
+                    "n_pred": 674630,
+                    "n_ref": 607006
+                },
+                "2": {
+                    "Dice": 0.7394818637438467,
+                    "FN": 31265,
+                    "FP": 319085,
+                    "IoU": 0.5866491266362666,
+                    "TN": 15929631,
+                    "TP": 497235,
+                    "n_pred": 816320,
+                    "n_ref": 528500
+                },
+                "3": {
+                    "Dice": 0.8461755508006301,
+                    "FN": 7447,
+                    "FP": 5637,
+                    "IoU": 0.7333659391493957,
+                    "TN": 16728145,
+                    "TP": 35987,
+                    "n_pred": 41624,
+                    "n_ref": 43434
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30250_ses-d1233_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30250_ses-d1233_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.446013671366339,
+                    "FN": 250823,
+                    "FP": 325638,
+                    "IoU": 0.287012609537238,
+                    "TN": 15968701,
+                    "TP": 232054,
+                    "n_pred": 557692,
+                    "n_ref": 482877
+                },
+                "2": {
+                    "Dice": 0.7116767879659086,
+                    "FN": 42425,
+                    "FP": 271072,
+                    "IoU": 0.5524054688436959,
+                    "TN": 16076812,
+                    "TP": 386907,
+                    "n_pred": 657979,
+                    "n_ref": 429332
+                },
+                "3": {
+                    "Dice": 0.7231192537413597,
+                    "FN": 7685,
+                    "FP": 12944,
+                    "IoU": 0.5663169844640191,
+                    "TN": 16729649,
+                    "TP": 26938,
+                    "n_pred": 39882,
+                    "n_ref": 34623
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30255_ses-d0019_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30255_ses-d0019_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6944107038466528,
+                    "FN": 134772,
+                    "FP": 228012,
+                    "IoU": 0.5318753040428505,
+                    "TN": 16002243,
+                    "TP": 412189,
+                    "n_pred": 640201,
+                    "n_ref": 546961
+                },
+                "2": {
+                    "Dice": 0.7562838484000798,
+                    "FN": 96662,
+                    "FP": 93964,
+                    "IoU": 0.6080839646789132,
+                    "TN": 16290821,
+                    "TP": 295769,
+                    "n_pred": 389733,
+                    "n_ref": 392431
+                },
+                "3": {
+                    "Dice": 0.6969935463560523,
+                    "FN": 5737,
+                    "FP": 7738,
+                    "IoU": 0.5349118144479342,
+                    "TN": 16748243,
+                    "TP": 15498,
+                    "n_pred": 23236,
+                    "n_ref": 21235
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30261_ses-d0785_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30261_ses-d0785_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.538879140530983,
+                    "FN": 242496,
+                    "FP": 306212,
+                    "IoU": 0.36881216022527796,
+                    "TN": 15907890,
+                    "TP": 320618,
+                    "n_pred": 626830,
+                    "n_ref": 563114
+                },
+                "2": {
+                    "Dice": 0.7720173749244416,
+                    "FN": 39455,
+                    "FP": 252469,
+                    "IoU": 0.6286875393509244,
+                    "TN": 15991021,
+                    "TP": 494271,
+                    "n_pred": 746740,
+                    "n_ref": 533726
+                },
+                "3": {
+                    "Dice": 0.7683043293718166,
+                    "FN": 8953,
+                    "FP": 8515,
+                    "IoU": 0.6237777299160026,
+                    "TN": 16730786,
+                    "TP": 28962,
+                    "n_pred": 37477,
+                    "n_ref": 37915
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30265_ses-d0192_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30265_ses-d0192_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8624649236403696,
+                    "FN": 29845,
+                    "FP": 139445,
+                    "IoU": 0.7581875421375599,
+                    "TN": 16077128,
+                    "TP": 530798,
+                    "n_pred": 670243,
+                    "n_ref": 560643
+                },
+                "2": {
+                    "Dice": 0.9298016953796071,
+                    "FN": 46150,
+                    "FP": 23544,
+                    "IoU": 0.8688125288232581,
+                    "TN": 16245961,
+                    "TP": 461561,
+                    "n_pred": 485105,
+                    "n_ref": 507711
+                },
+                "3": {
+                    "Dice": 0.8689661283533816,
+                    "FN": 2229,
+                    "FP": 3686,
+                    "IoU": 0.7682936383578816,
+                    "TN": 16751688,
+                    "TP": 19613,
+                    "n_pred": 23299,
+                    "n_ref": 21842
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30272_ses-d0057_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30272_ses-d0057_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6407230670989374,
+                    "FN": 182903,
+                    "FP": 240756,
+                    "IoU": 0.47137051441861977,
+                    "TN": 15975787,
+                    "TP": 377770,
+                    "n_pred": 618526,
+                    "n_ref": 560673
+                },
+                "2": {
+                    "Dice": 0.7923986230983953,
+                    "FN": 42529,
+                    "FP": 183934,
+                    "IoU": 0.6561756538664164,
+                    "TN": 16118557,
+                    "TP": 432196,
+                    "n_pred": 616130,
+                    "n_ref": 474725
+                },
+                "3": {
+                    "Dice": 0.7537210203065347,
+                    "FN": 3501,
+                    "FP": 5401,
+                    "IoU": 0.6047771266204937,
+                    "TN": 16754692,
+                    "TP": 13622,
+                    "n_pred": 19023,
+                    "n_ref": 17123
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30276_ses-d1200_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30276_ses-d1200_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8480874673405135,
+                    "FN": 37284,
+                    "FP": 139702,
+                    "IoU": 0.7362429379794014,
+                    "TN": 16106197,
+                    "TP": 494033,
+                    "n_pred": 633735,
+                    "n_ref": 531317
+                },
+                "2": {
+                    "Dice": 0.9125159307522974,
+                    "FN": 43143,
+                    "FP": 28590,
+                    "IoU": 0.8391074007948969,
+                    "TN": 16331372,
+                    "TP": 374111,
+                    "n_pred": 402701,
+                    "n_ref": 417254
+                },
+                "3": {
+                    "Dice": 0.8995490045099549,
+                    "FN": 3632,
+                    "FP": 5500,
+                    "IoU": 0.8174366765958297,
+                    "TN": 16727195,
+                    "TP": 40889,
+                    "n_pred": 46389,
+                    "n_ref": 44521
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30277_ses-d0198_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30277_ses-d0198_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6117491257104303,
+                    "FN": 202560,
+                    "FP": 230747,
+                    "IoU": 0.4406617975468517,
+                    "TN": 16002538,
+                    "TP": 341371,
+                    "n_pred": 572118,
+                    "n_ref": 543931
+                },
+                "2": {
+                    "Dice": 0.775468109223053,
+                    "FN": 33258,
+                    "FP": 197517,
+                    "IoU": 0.6332771853994184,
+                    "TN": 16147926,
+                    "TP": 398515,
+                    "n_pred": 596032,
+                    "n_ref": 431773
+                },
+                "3": {
+                    "Dice": 0.7810275953900546,
+                    "FN": 3580,
+                    "FP": 5958,
+                    "IoU": 0.6407262317312039,
+                    "TN": 16750668,
+                    "TP": 17010,
+                    "n_pred": 22968,
+                    "n_ref": 20590
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30284_ses-d3510_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30284_ses-d3510_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8483497468084297,
+                    "FN": 42476,
+                    "FP": 140864,
+                    "IoU": 0.736638353925071,
+                    "TN": 16081063,
+                    "TP": 512813,
+                    "n_pred": 653677,
+                    "n_ref": 555289
+                },
+                "2": {
+                    "Dice": 0.9093114188708764,
+                    "FN": 51091,
+                    "FP": 31686,
+                    "IoU": 0.8337039871908456,
+                    "TN": 16279447,
+                    "TP": 414992,
+                    "n_pred": 446678,
+                    "n_ref": 466083
+                },
+                "3": {
+                    "Dice": 0.7770593869731801,
+                    "FN": 2368,
+                    "FP": 3218,
+                    "IoU": 0.6354023888780106,
+                    "TN": 16761895,
+                    "TP": 9735,
+                    "n_pred": 12953,
+                    "n_ref": 12103
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30285_ses-d0055_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30285_ses-d0055_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.29218035294419725,
+                    "FN": 368027,
+                    "FP": 403839,
+                    "IoU": 0.17108384567884663,
+                    "TN": 15846041,
+                    "TP": 159309,
+                    "n_pred": 563148,
+                    "n_ref": 527336
+                },
+                "2": {
+                    "Dice": 0.6640115557908096,
+                    "FN": 43280,
+                    "FP": 378196,
+                    "IoU": 0.49701893655514134,
+                    "TN": 15939260,
+                    "TP": 416480,
+                    "n_pred": 794676,
+                    "n_ref": 459760
+                },
+                "3": {
+                    "Dice": 0.7711188105419775,
+                    "FN": 21701,
+                    "FP": 22295,
+                    "IoU": 0.6274966344647741,
+                    "TN": 16659107,
+                    "TP": 74113,
+                    "n_pred": 96408,
+                    "n_ref": 95814
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30287_ses-d0890_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30287_ses-d0890_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8589711981961579,
+                    "FN": 32278,
+                    "FP": 136471,
+                    "IoU": 0.7528041332858715,
+                    "TN": 16094563,
+                    "TP": 513904,
+                    "n_pred": 650375,
+                    "n_ref": 546182
+                },
+                "2": {
+                    "Dice": 0.9260923582034256,
+                    "FN": 42717,
+                    "FP": 26706,
+                    "IoU": 0.8623575456210892,
+                    "TN": 16272844,
+                    "TP": 434949,
+                    "n_pred": 461655,
+                    "n_ref": 477666
+                },
+                "3": {
+                    "Dice": 0.828966072146976,
+                    "FN": 2705,
+                    "FP": 3672,
+                    "IoU": 0.7078924465210022,
+                    "TN": 16755385,
+                    "TP": 15454,
+                    "n_pred": 19126,
+                    "n_ref": 18159
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30289_ses-d0160_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30289_ses-d0160_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.35607500959455823,
+                    "FN": 288544,
+                    "FP": 295344,
+                    "IoU": 0.21660052111425068,
+                    "TN": 16031890,
+                    "TP": 161438,
+                    "n_pred": 456782,
+                    "n_ref": 449982
+                },
+                "2": {
+                    "Dice": 0.6875979254008903,
+                    "FN": 16003,
+                    "FP": 297634,
+                    "IoU": 0.5239232234610159,
+                    "TN": 16118421,
+                    "TP": 345158,
+                    "n_pred": 642792,
+                    "n_ref": 361161
+                },
+                "3": {
+                    "Dice": 0.8796291312304877,
+                    "FN": 10727,
+                    "FP": 7163,
+                    "IoU": 0.785123172826309,
+                    "TN": 16693959,
+                    "TP": 65367,
+                    "n_pred": 72530,
+                    "n_ref": 76094
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30298_ses-d0292_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30298_ses-d0292_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8468111118876119,
+                    "FN": 39573,
+                    "FP": 151132,
+                    "IoU": 0.734321255274776,
+                    "TN": 16059413,
+                    "TP": 527098,
+                    "n_pred": 678230,
+                    "n_ref": 566671
+                },
+                "2": {
+                    "Dice": 0.9205925803485645,
+                    "FN": 43619,
+                    "FP": 33245,
+                    "IoU": 0.8528684939425785,
+                    "TN": 16254799,
+                    "TP": 445553,
+                    "n_pred": 478798,
+                    "n_ref": 489172
+                },
+                "3": {
+                    "Dice": 0.8823653261948446,
+                    "FN": 2747,
+                    "FP": 5075,
+                    "IoU": 0.7894935141826793,
+                    "TN": 16740058,
+                    "TP": 29336,
+                    "n_pred": 34411,
+                    "n_ref": 32083
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30299_ses-d0119_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30299_ses-d0119_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6671797407155468,
+                    "FN": 186366,
+                    "FP": 282845,
+                    "IoU": 0.5005774305034449,
+                    "TN": 15837709,
+                    "TP": 470296,
+                    "n_pred": 753141,
+                    "n_ref": 656662
+                },
+                "2": {
+                    "Dice": 0.8043988632151242,
+                    "FN": 73242,
+                    "FP": 189536,
+                    "IoU": 0.6727986771393137,
+                    "TN": 15974108,
+                    "TP": 540330,
+                    "n_pred": 729866,
+                    "n_ref": 613572
+                },
+                "3": {
+                    "Dice": 0.6587771203155819,
+                    "FN": 3806,
+                    "FP": 7612,
+                    "IoU": 0.49117647058823527,
+                    "TN": 16754776,
+                    "TP": 11022,
+                    "n_pred": 18634,
+                    "n_ref": 14828
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30304_sess-d1272_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30304_sess-d1272_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8487858476012489,
+                    "FN": 46198,
+                    "FP": 138767,
+                    "IoU": 0.7372962240193613,
+                    "TN": 16073134,
+                    "TP": 519117,
+                    "n_pred": 657884,
+                    "n_ref": 565315
+                },
+                "2": {
+                    "Dice": 0.9141749669128287,
+                    "FN": 41554,
+                    "FP": 37625,
+                    "IoU": 0.841917379924172,
+                    "TN": 16276345,
+                    "TP": 421692,
+                    "n_pred": 459317,
+                    "n_ref": 463246
+                },
+                "3": {
+                    "Dice": 0.8969968760544677,
+                    "FN": 4777,
+                    "FP": 4686,
+                    "IoU": 0.8132314918980796,
+                    "TN": 16726549,
+                    "TP": 41204,
+                    "n_pred": 45890,
+                    "n_ref": 45981
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30306_ses-d0473_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30306_ses-d0473_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5877839686009622,
+                    "FN": 215239,
+                    "FP": 277860,
+                    "IoU": 0.41621391878596875,
+                    "TN": 15932559,
+                    "TP": 351558,
+                    "n_pred": 629418,
+                    "n_ref": 566797
+                },
+                "2": {
+                    "Dice": 0.7487808163349888,
+                    "FN": 57123,
+                    "FP": 233827,
+                    "IoU": 0.5984409655082941,
+                    "TN": 16052665,
+                    "TP": 433601,
+                    "n_pred": 667428,
+                    "n_ref": 490724
+                },
+                "3": {
+                    "Dice": 0.8144314613404493,
+                    "FN": 6628,
+                    "FP": 7141,
+                    "IoU": 0.6869543470352856,
+                    "TN": 16733232,
+                    "TP": 30215,
+                    "n_pred": 37356,
+                    "n_ref": 36843
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30308_ses-d0423_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30308_ses-d0423_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8273283848946199,
+                    "FN": 41103,
+                    "FP": 146930,
+                    "IoU": 0.7055072999445574,
+                    "TN": 16138718,
+                    "TP": 450465,
+                    "n_pred": 597395,
+                    "n_ref": 491568
+                },
+                "2": {
+                    "Dice": 0.9079730908035458,
+                    "FN": 42684,
+                    "FP": 34045,
+                    "IoU": 0.8314567005236706,
+                    "TN": 16321968,
+                    "TP": 378519,
+                    "n_pred": 412564,
+                    "n_ref": 421203
+                },
+                "3": {
+                    "Dice": 0.7952150658168657,
+                    "FN": 3675,
+                    "FP": 9113,
+                    "IoU": 0.660047319031289,
+                    "TN": 16739599,
+                    "TP": 24829,
+                    "n_pred": 33942,
+                    "n_ref": 28504
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30310_ses-d0191_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30310_ses-d0191_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5235859937030414,
+                    "FN": 226323,
+                    "FP": 256979,
+                    "IoU": 0.3546335861553253,
+                    "TN": 16028336,
+                    "TP": 265578,
+                    "n_pred": 522557,
+                    "n_ref": 491901
+                },
+                "2": {
+                    "Dice": 0.768270310232469,
+                    "FN": 27751,
+                    "FP": 226139,
+                    "IoU": 0.6237328828027743,
+                    "TN": 16102456,
+                    "TP": 420870,
+                    "n_pred": 647009,
+                    "n_ref": 448621
+                },
+                "3": {
+                    "Dice": 0.7048410728702569,
+                    "FN": 5079,
+                    "FP": 4792,
+                    "IoU": 0.544212033060904,
+                    "TN": 16755559,
+                    "TP": 11786,
+                    "n_pred": 16578,
+                    "n_ref": 16865
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30311_ses-d0127_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30311_ses-d0127_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8453766632204683,
+                    "FN": 45037,
+                    "FP": 152830,
+                    "IoU": 0.7321666177113549,
+                    "TN": 16038447,
+                    "TP": 540902,
+                    "n_pred": 693732,
+                    "n_ref": 585939
+                },
+                "2": {
+                    "Dice": 0.9155275529849324,
+                    "FN": 48841,
+                    "FP": 33559,
+                    "IoU": 0.8442146736921311,
+                    "TN": 16248283,
+                    "TP": 446533,
+                    "n_pred": 480092,
+                    "n_ref": 495374
+                },
+                "3": {
+                    "Dice": 0.9230281268701377,
+                    "FN": 5289,
+                    "FP": 7573,
+                    "IoU": 0.8570587123948389,
+                    "TN": 16687235,
+                    "TP": 77119,
+                    "n_pred": 84692,
+                    "n_ref": 82408
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30316_ses-d0018_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30316_ses-d0018_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.45261587077198623,
+                    "FN": 315453,
+                    "FP": 345908,
+                    "IoU": 0.29250388589534987,
+                    "TN": 15842425,
+                    "TP": 273430,
+                    "n_pred": 619338,
+                    "n_ref": 588883
+                },
+                "2": {
+                    "Dice": 0.71602174997263,
+                    "FN": 38259,
+                    "FP": 311916,
+                    "IoU": 0.5576587842958921,
+                    "TN": 15985576,
+                    "TP": 441465,
+                    "n_pred": 753381,
+                    "n_ref": 479724
+                },
+                "3": {
+                    "Dice": 0.6828676191680364,
+                    "FN": 7644,
+                    "FP": 4897,
+                    "IoU": 0.5184502553469262,
+                    "TN": 16751173,
+                    "TP": 13502,
+                    "n_pred": 18399,
+                    "n_ref": 21146
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30317_ses-d0088_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30317_ses-d0088_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8428643545552207,
+                    "FN": 46393,
+                    "FP": 157801,
+                    "IoU": 0.7284058337268151,
+                    "TN": 16025381,
+                    "TP": 547641,
+                    "n_pred": 705442,
+                    "n_ref": 594034
+                },
+                "2": {
+                    "Dice": 0.9158555248531821,
+                    "FN": 47187,
+                    "FP": 35672,
+                    "IoU": 0.8447725795301907,
+                    "TN": 16243425,
+                    "TP": 450932,
+                    "n_pred": 486604,
+                    "n_ref": 498119
+                },
+                "3": {
+                    "Dice": 0.9096157989228008,
+                    "FN": 5717,
+                    "FP": 6869,
+                    "IoU": 0.8342158644853658,
+                    "TN": 16701298,
+                    "TP": 63332,
+                    "n_pred": 70201,
+                    "n_ref": 69049
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30318_ses-d2975_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30318_ses-d2975_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6346396329033223,
+                    "FN": 198873,
+                    "FP": 265321,
+                    "IoU": 0.46481474649277343,
+                    "TN": 15909864,
+                    "TP": 403158,
+                    "n_pred": 668479,
+                    "n_ref": 602031
+                },
+                "2": {
+                    "Dice": 0.7764158462044091,
+                    "FN": 62626,
+                    "FP": 204729,
+                    "IoU": 0.6345422534248635,
+                    "TN": 16045654,
+                    "TP": 464207,
+                    "n_pred": 668936,
+                    "n_ref": 526833
+                },
+                "3": {
+                    "Dice": 0.7152165348365003,
+                    "FN": 4157,
+                    "FP": 5240,
+                    "IoU": 0.5566825494173704,
+                    "TN": 16756019,
+                    "TP": 11800,
+                    "n_pred": 17040,
+                    "n_ref": 15957
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30319_ses-d0043_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30319_ses-d0043_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8424731196231957,
+                    "FN": 44751,
+                    "FP": 144346,
+                    "IoU": 0.7278216462229796,
+                    "TN": 16082462,
+                    "TP": 505657,
+                    "n_pred": 650003,
+                    "n_ref": 550408
+                },
+                "2": {
+                    "Dice": 0.9104161557984101,
+                    "FN": 32584,
+                    "FP": 41577,
+                    "IoU": 0.8355631929046563,
+                    "TN": 16326216,
+                    "TP": 376839,
+                    "n_pred": 418416,
+                    "n_ref": 409423
+                },
+                "3": {
+                    "Dice": 0.7356854197884031,
+                    "FN": 2161,
+                    "FP": 3660,
+                    "IoU": 0.5818847866685821,
+                    "TN": 16763294,
+                    "TP": 8101,
+                    "n_pred": 11761,
+                    "n_ref": 10262
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30321_ses-d0075_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30321_ses-d0075_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5180350010540239,
+                    "FN": 243306,
+                    "FP": 273400,
+                    "IoU": 0.34955953846579907,
+                    "TN": 15982822,
+                    "TP": 277688,
+                    "n_pred": 551088,
+                    "n_ref": 520994
+                },
+                "2": {
+                    "Dice": 0.7419178401743892,
+                    "FN": 31752,
+                    "FP": 260325,
+                    "IoU": 0.589721294734225,
+                    "TN": 16065317,
+                    "TP": 419822,
+                    "n_pred": 680147,
+                    "n_ref": 451574
+                },
+                "3": {
+                    "Dice": 0.8648020384747203,
+                    "FN": 11166,
+                    "FP": 6980,
+                    "IoU": 0.76180725105668,
+                    "TN": 16701034,
+                    "TP": 58036,
+                    "n_pred": 65016,
+                    "n_ref": 69202
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30322_ses-d1630_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30322_ses-d1630_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6992174460959641,
+                    "FN": 123917,
+                    "FP": 204980,
+                    "IoU": 0.5375359963103782,
+                    "TN": 16066032,
+                    "TP": 382287,
+                    "n_pred": 587267,
+                    "n_ref": 506204
+                },
+                "2": {
+                    "Dice": 0.8006863046022215,
+                    "FN": 74318,
+                    "FP": 91916,
+                    "IoU": 0.66762041297015,
+                    "TN": 16277083,
+                    "TP": 333899,
+                    "n_pred": 425815,
+                    "n_ref": 408217
+                },
+                "3": {
+                    "Dice": 0.8353056762761221,
+                    "FN": 6808,
+                    "FP": 11799,
+                    "IoU": 0.7171887586825346,
+                    "TN": 16711423,
+                    "TP": 47186,
+                    "n_pred": 58985,
+                    "n_ref": 53994
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30326_ses-d0189_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30326_ses-d0189_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5013898340783245,
+                    "FN": 252087,
+                    "FP": 311338,
+                    "IoU": 0.33456988713936797,
+                    "TN": 15930508,
+                    "TP": 283283,
+                    "n_pred": 594621,
+                    "n_ref": 535370
+                },
+                "2": {
+                    "Dice": 0.6894410828225201,
+                    "FN": 48493,
+                    "FP": 298151,
+                    "IoU": 0.5260664543852429,
+                    "TN": 16045797,
+                    "TP": 384775,
+                    "n_pred": 682926,
+                    "n_ref": 433268
+                },
+                "3": {
+                    "Dice": 0.8247434567047158,
+                    "FN": 8965,
+                    "FP": 6235,
+                    "IoU": 0.7017561071323457,
+                    "TN": 16726251,
+                    "TP": 35765,
+                    "n_pred": 42000,
+                    "n_ref": 44730
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30327_ses-d0281_run-02_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30327_ses-d0281_run-02_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.830399269188813,
+                    "FN": 49520,
+                    "FP": 153218,
+                    "IoU": 0.7099852516447063,
+                    "TN": 16078155,
+                    "TP": 496323,
+                    "n_pred": 649541,
+                    "n_ref": 545843
+                },
+                "2": {
+                    "Dice": 0.9090455843669489,
+                    "FN": 39596,
+                    "FP": 41038,
+                    "IoU": 0.833257165781262,
+                    "TN": 16293633,
+                    "TP": 402949,
+                    "n_pred": 443987,
+                    "n_ref": 442545
+                },
+                "3": {
+                    "Dice": 0.8535339253058839,
+                    "FN": 2763,
+                    "FP": 5006,
+                    "IoU": 0.7444912188383872,
+                    "TN": 16746810,
+                    "TP": 22637,
+                    "n_pred": 27643,
+                    "n_ref": 25400
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30328_sess-d1274_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30328_sess-d1274_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3890754479586967,
+                    "FN": 317457,
+                    "FP": 386603,
+                    "IoU": 0.24152307286252162,
+                    "TN": 15848961,
+                    "TP": 224195,
+                    "n_pred": 610798,
+                    "n_ref": 541652
+                },
+                "2": {
+                    "Dice": 0.6995230087192129,
+                    "FN": 25420,
+                    "FP": 345868,
+                    "IoU": 0.537897258782165,
+                    "TN": 15973741,
+                    "TP": 432187,
+                    "n_pred": 778055,
+                    "n_ref": 457607
+                },
+                "3": {
+                    "Dice": 0.8203047081886027,
+                    "FN": 10250,
+                    "FP": 5425,
+                    "IoU": 0.6953530406390298,
+                    "TN": 16725763,
+                    "TP": 35778,
+                    "n_pred": 41203,
+                    "n_ref": 46028
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30329_ses-d0376_run-02_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30329_ses-d0376_run-02_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8045676483022304,
+                    "FN": 69642,
+                    "FP": 140695,
+                    "IoU": 0.6730348623739121,
+                    "TN": 16133915,
+                    "TP": 432964,
+                    "n_pred": 573659,
+                    "n_ref": 502606
+                },
+                "2": {
+                    "Dice": 0.8736421096053467,
+                    "FN": 51015,
+                    "FP": 50682,
+                    "IoU": 0.7756345625627392,
+                    "TN": 16323951,
+                    "TP": 351568,
+                    "n_pred": 402250,
+                    "n_ref": 402583
+                },
+                "3": {
+                    "Dice": 0.9001440045588609,
+                    "FN": 6200,
+                    "FP": 6767,
+                    "IoU": 0.8184198734106313,
+                    "TN": 16705804,
+                    "TP": 58445,
+                    "n_pred": 65212,
+                    "n_ref": 64645
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30331_ses-d2824_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30331_ses-d2824_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6077017303879121,
+                    "FN": 214095,
+                    "FP": 257963,
+                    "IoU": 0.43647380999563085,
+                    "TN": 15939530,
+                    "TP": 365628,
+                    "n_pred": 623591,
+                    "n_ref": 579723
+                },
+                "2": {
+                    "Dice": 0.7569658702363302,
+                    "FN": 48039,
+                    "FP": 221280,
+                    "IoU": 0.6089662802583283,
+                    "TN": 16088480,
+                    "TP": 419417,
+                    "n_pred": 640697,
+                    "n_ref": 467456
+                },
+                "3": {
+                    "Dice": 0.8154639791264167,
+                    "FN": 4412,
+                    "FP": 4853,
+                    "IoU": 0.6884248049502287,
+                    "TN": 16747480,
+                    "TP": 20471,
+                    "n_pred": 25324,
+                    "n_ref": 24883
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30335_ses-d0693_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30335_ses-d0693_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.846346349805302,
+                    "FN": 44149,
+                    "FP": 155950,
+                    "IoU": 0.7336225648507826,
+                    "TN": 16026030,
+                    "TP": 551087,
+                    "n_pred": 707037,
+                    "n_ref": 595236
+                },
+                "2": {
+                    "Dice": 0.9080789965953548,
+                    "FN": 48990,
+                    "FP": 34301,
+                    "IoU": 0.831634334135835,
+                    "TN": 16282513,
+                    "TP": 411412,
+                    "n_pred": 445713,
+                    "n_ref": 460402
+                },
+                "3": {
+                    "Dice": 0.877406662393068,
+                    "FN": 3250,
+                    "FP": 7842,
+                    "IoU": 0.7815890518853992,
+                    "TN": 16726431,
+                    "TP": 39693,
+                    "n_pred": 47535,
+                    "n_ref": 42943
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30336_ses-d0012_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30336_ses-d0012_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6101797175256655,
+                    "FN": 179575,
+                    "FP": 312761,
+                    "IoU": 0.4390349782774403,
+                    "TN": 15899557,
+                    "TP": 385323,
+                    "n_pred": 698084,
+                    "n_ref": 564898
+                },
+                "2": {
+                    "Dice": 0.7484362462377324,
+                    "FN": 106307,
+                    "FP": 134156,
+                    "IoU": 0.5980008960693317,
+                    "TN": 16179048,
+                    "TP": 357705,
+                    "n_pred": 491861,
+                    "n_ref": 464012
+                },
+                "3": {
+                    "Dice": 0.8595954833800897,
+                    "FN": 14942,
+                    "FP": 15137,
+                    "IoU": 0.7537636609225984,
+                    "TN": 16655061,
+                    "TP": 92076,
+                    "n_pred": 107213,
+                    "n_ref": 107018
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30344_ses-d1052_run-01_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30344_ses-d1052_run-01_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.42053445850914206,
+                    "FN": 282111,
+                    "FP": 305401,
+                    "IoU": 0.26625111308993765,
+                    "TN": 15976517,
+                    "TP": 213187,
+                    "n_pred": 518588,
+                    "n_ref": 495298
+                },
+                "2": {
+                    "Dice": 0.7059444028418184,
+                    "FN": 25665,
+                    "FP": 283765,
+                    "IoU": 0.5455286499220835,
+                    "TN": 16096359,
+                    "TP": 371427,
+                    "n_pred": 655192,
+                    "n_ref": 397092
+                },
+                "3": {
+                    "Dice": 0.8555442971055993,
+                    "FN": 4096,
+                    "FP": 5741,
+                    "IoU": 0.7475556239895296,
+                    "TN": 16738249,
+                    "TP": 29130,
+                    "n_pred": 34871,
+                    "n_ref": 33226
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30350_ses-d0509_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30350_ses-d0509_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8209559681916194,
+                    "FN": 47508,
+                    "FP": 161074,
+                    "IoU": 0.6962894905056795,
+                    "TN": 16090437,
+                    "TP": 478197,
+                    "n_pred": 639271,
+                    "n_ref": 525705
+                },
+                "2": {
+                    "Dice": 0.9091413684747675,
+                    "FN": 38255,
+                    "FP": 42937,
+                    "IoU": 0.8334181370537547,
+                    "TN": 16289816,
+                    "TP": 406208,
+                    "n_pred": 449145,
+                    "n_ref": 444463
+                },
+                "3": {
+                    "Dice": 0.902957237572937,
+                    "FN": 3618,
+                    "FP": 4681,
+                    "IoU": 0.8230829904709117,
+                    "TN": 16730307,
+                    "TP": 38610,
+                    "n_pred": 43291,
+                    "n_ref": 42228
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30351_sess-d2542_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30351_sess-d2542_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8323078968319763,
+                    "FN": 60992,
+                    "FP": 163538,
+                    "IoU": 0.7127802736473694,
+                    "TN": 15995480,
+                    "TP": 557206,
+                    "n_pred": 720744,
+                    "n_ref": 618198
+                },
+                "2": {
+                    "Dice": 0.9062499373824041,
+                    "FN": 40856,
+                    "FP": 52718,
+                    "IoU": 0.8285713238850376,
+                    "TN": 16231368,
+                    "TP": 452274,
+                    "n_pred": 504992,
+                    "n_ref": 493130
+                },
+                "3": {
+                    "Dice": 0.9232208827532569,
+                    "FN": 5371,
+                    "FP": 7265,
+                    "IoU": 0.8573911473263661,
+                    "TN": 16688610,
+                    "TP": 75970,
+                    "n_pred": 83235,
+                    "n_ref": 81341
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30357_ses-d0521_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30357_ses-d0521_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.44764565770795134,
+                    "FN": 262184,
+                    "FP": 338197,
+                    "IoU": 0.28836564276104854,
+                    "TN": 15933551,
+                    "TP": 243284,
+                    "n_pred": 581481,
+                    "n_ref": 505468
+                },
+                "2": {
+                    "Dice": 0.7125251994649625,
+                    "FN": 37406,
+                    "FP": 293140,
+                    "IoU": 0.5534284625756228,
+                    "TN": 16037030,
+                    "TP": 409640,
+                    "n_pred": 702780,
+                    "n_ref": 447046
+                },
+                "3": {
+                    "Dice": 0.7700277105125196,
+                    "FN": 10468,
+                    "FP": 7956,
+                    "IoU": 0.6260528933000467,
+                    "TN": 16727947,
+                    "TP": 30845,
+                    "n_pred": 38801,
+                    "n_ref": 41313
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30361_ses-d2151_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30361_ses-d2151_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8327831143853472,
+                    "FN": 33630,
+                    "FP": 157124,
+                    "IoU": 0.713477610415828,
+                    "TN": 16111460,
+                    "TP": 475002,
+                    "n_pred": 632126,
+                    "n_ref": 508632
+                },
+                "2": {
+                    "Dice": 0.907162789816594,
+                    "FN": 52092,
+                    "FP": 26321,
+                    "IoU": 0.8300987387356155,
+                    "TN": 16315695,
+                    "TP": 383108,
+                    "n_pred": 409429,
+                    "n_ref": 435200
+                },
+                "3": {
+                    "Dice": 0.9123030793393937,
+                    "FN": 3666,
+                    "FP": 5547,
+                    "IoU": 0.8387475058634088,
+                    "TN": 16720082,
+                    "TP": 47921,
+                    "n_pred": 53468,
+                    "n_ref": 51587
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30362_ses-d0032_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30362_ses-d0032_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5582832074212895,
+                    "FN": 228984,
+                    "FP": 270224,
+                    "IoU": 0.38723500363946134,
+                    "TN": 15962535,
+                    "TP": 315473,
+                    "n_pred": 585697,
+                    "n_ref": 544457
+                },
+                "2": {
+                    "Dice": 0.757020541467536,
+                    "FN": 29713,
+                    "FP": 240053,
+                    "IoU": 0.6090370490605852,
+                    "TN": 16087212,
+                    "TP": 420238,
+                    "n_pred": 660291,
+                    "n_ref": 449951
+                },
+                "3": {
+                    "Dice": 0.8343740965596993,
+                    "FN": 6177,
+                    "FP": 5281,
+                    "IoU": 0.715816364493167,
+                    "TN": 16736897,
+                    "TP": 28861,
+                    "n_pred": 34142,
+                    "n_ref": 35038
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30363_ses-d0087_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30363_ses-d0087_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.859077981828375,
+                    "FN": 36664,
+                    "FP": 149597,
+                    "IoU": 0.7529681855076155,
+                    "TN": 16023220,
+                    "TP": 567735,
+                    "n_pred": 717332,
+                    "n_ref": 604399
+                },
+                "2": {
+                    "Dice": 0.9229480377204476,
+                    "FN": 45747,
+                    "FP": 29580,
+                    "IoU": 0.8569206222576785,
+                    "TN": 16250746,
+                    "TP": 451143,
+                    "n_pred": 480723,
+                    "n_ref": 496890
+                },
+                "3": {
+                    "Dice": 0.8239581194826524,
+                    "FN": 2406,
+                    "FP": 4454,
+                    "IoU": 0.700619708475168,
+                    "TN": 16754302,
+                    "TP": 16054,
+                    "n_pred": 20508,
+                    "n_ref": 18460
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30368_ses-d0056_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30368_ses-d0056_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.48397478253433973,
+                    "FN": 236590,
+                    "FP": 294466,
+                    "IoU": 0.3192392692144004,
+                    "TN": 15997124,
+                    "TP": 249036,
+                    "n_pred": 543502,
+                    "n_ref": 485626
+                },
+                "2": {
+                    "Dice": 0.7104092903959778,
+                    "FN": 60616,
+                    "FP": 277427,
+                    "IoU": 0.5508796590308206,
+                    "TN": 16024538,
+                    "TP": 414635,
+                    "n_pred": 692062,
+                    "n_ref": 475251
+                },
+                "3": {
+                    "Dice": 0.8016751328085618,
+                    "FN": 10432,
+                    "FP": 15141,
+                    "IoU": 0.6689964923180471,
+                    "TN": 16699957,
+                    "TP": 51686,
+                    "n_pred": 66827,
+                    "n_ref": 62118
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30369_ses-d4921_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30369_ses-d4921_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8539780991390119,
+                    "FN": 34604,
+                    "FP": 140082,
+                    "IoU": 0.7451673467125121,
+                    "TN": 16091723,
+                    "TP": 510807,
+                    "n_pred": 650889,
+                    "n_ref": 545411
+                },
+                "2": {
+                    "Dice": 0.9157940696429874,
+                    "FN": 51235,
+                    "FP": 26102,
+                    "IoU": 0.8446680137060588,
+                    "TN": 16279334,
+                    "TP": 420545,
+                    "n_pred": 446647,
+                    "n_ref": 471780
+                },
+                "3": {
+                    "Dice": 0.8415153265310488,
+                    "FN": 2620,
+                    "FP": 4789,
+                    "IoU": 0.7263931459802799,
+                    "TN": 16750137,
+                    "TP": 19670,
+                    "n_pred": 24459,
+                    "n_ref": 22290
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30372_ses-d3464_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30372_ses-d3464_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4768527806329729,
+                    "FN": 293313,
+                    "FP": 382080,
+                    "IoU": 0.31307070949526344,
+                    "TN": 15794010,
+                    "TP": 307813,
+                    "n_pred": 689893,
+                    "n_ref": 601126
+                },
+                "2": {
+                    "Dice": 0.757026279275582,
+                    "FN": 37602,
+                    "FP": 310522,
+                    "IoU": 0.6090444766880343,
+                    "TN": 15886772,
+                    "TP": 542320,
+                    "n_pred": 852842,
+                    "n_ref": 579922
+                },
+                "3": {
+                    "Dice": 0.8442257851965737,
+                    "FN": 10148,
+                    "FP": 7583,
+                    "IoU": 0.7304417890480099,
+                    "TN": 16711438,
+                    "TP": 48047,
+                    "n_pred": 55630,
+                    "n_ref": 58195
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30373_ses-d0048_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30373_ses-d0048_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8198965519085835,
+                    "FN": 43758,
+                    "FP": 158268,
+                    "IoU": 0.6947666776455942,
+                    "TN": 16115342,
+                    "TP": 459848,
+                    "n_pred": 618116,
+                    "n_ref": 503606
+                },
+                "2": {
+                    "Dice": 0.901642384010891,
+                    "FN": 44914,
+                    "FP": 37305,
+                    "IoU": 0.8209005617891864,
+                    "TN": 16318147,
+                    "TP": 376850,
+                    "n_pred": 414155,
+                    "n_ref": 421764
+                },
+                "3": {
+                    "Dice": 0.8851981351981352,
+                    "FN": 2632,
+                    "FP": 5642,
+                    "IoU": 0.7940407736539467,
+                    "TN": 16737043,
+                    "TP": 31899,
+                    "n_pred": 37541,
+                    "n_ref": 34531
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30374_ses-d0084_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30374_ses-d0084_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.4243195003802067,
+                    "FN": 303841,
+                    "FP": 350261,
+                    "IoU": 0.26929285504427686,
+                    "TN": 15882053,
+                    "TP": 241061,
+                    "n_pred": 591322,
+                    "n_ref": 544902
+                },
+                "2": {
+                    "Dice": 0.673323400428884,
+                    "FN": 24468,
+                    "FP": 323929,
+                    "IoU": 0.5075264014203265,
+                    "TN": 16069773,
+                    "TP": 359046,
+                    "n_pred": 682975,
+                    "n_ref": 383514
+                },
+                "3": {
+                    "Dice": 0.7800687285223368,
+                    "FN": 7298,
+                    "FP": 5246,
+                    "IoU": 0.6394366197183099,
+                    "TN": 16742426,
+                    "TP": 22246,
+                    "n_pred": 27492,
+                    "n_ref": 29544
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30382_ses-d0051_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30382_ses-d0051_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8385341120595597,
+                    "FN": 44237,
+                    "FP": 131869,
+                    "IoU": 0.7219618938154811,
+                    "TN": 16143828,
+                    "TP": 457282,
+                    "n_pred": 589151,
+                    "n_ref": 501519
+                },
+                "2": {
+                    "Dice": 0.9119418002074786,
+                    "FN": 35735,
+                    "FP": 37520,
+                    "IoU": 0.8381369676561181,
+                    "TN": 16324642,
+                    "TP": 379319,
+                    "n_pred": 416839,
+                    "n_ref": 415054
+                },
+                "3": {
+                    "Dice": 0.8976371688456337,
+                    "FN": 2830,
+                    "FP": 4890,
+                    "IoU": 0.8142846832976497,
+                    "TN": 16735647,
+                    "TP": 33849,
+                    "n_pred": 38739,
+                    "n_ref": 36679
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30387_ses-d0616_run-02_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30387_ses-d0616_run-02_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6431576118453929,
+                    "FN": 193182,
+                    "FP": 307399,
+                    "IoU": 0.47401055381246493,
+                    "TN": 15825522,
+                    "TP": 451113,
+                    "n_pred": 758512,
+                    "n_ref": 644295
+                },
+                "2": {
+                    "Dice": 0.7910299384892248,
+                    "FN": 78017,
+                    "FP": 196722,
+                    "IoU": 0.6543006842541026,
+                    "TN": 15982482,
+                    "TP": 519995,
+                    "n_pred": 716717,
+                    "n_ref": 598012
+                },
+                "3": {
+                    "Dice": 0.6099880143827408,
+                    "FN": 2643,
+                    "FP": 7119,
+                    "IoU": 0.43883651414118185,
+                    "TN": 16759820,
+                    "TP": 7634,
+                    "n_pred": 14753,
+                    "n_ref": 10277
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30390_ses-d2428_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30390_ses-d2428_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7813018557075548,
+                    "FN": 66562,
+                    "FP": 191097,
+                    "IoU": 0.6410954668033609,
+                    "TN": 16059312,
+                    "TP": 460245,
+                    "n_pred": 651342,
+                    "n_ref": 526807
+                },
+                "2": {
+                    "Dice": 0.8774348761071488,
+                    "FN": 47364,
+                    "FP": 60641,
+                    "IoU": 0.7816338290150726,
+                    "TN": 16282611,
+                    "TP": 386600,
+                    "n_pred": 447241,
+                    "n_ref": 433964
+                },
+                "3": {
+                    "Dice": 0.8156004176099069,
+                    "FN": 2856,
+                    "FP": 14983,
+                    "IoU": 0.6886193052888812,
+                    "TN": 16719926,
+                    "TP": 39451,
+                    "n_pred": 54434,
+                    "n_ref": 42307
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30391_ses-d0192_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30391_ses-d0192_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.36679388831145876,
+                    "FN": 282306,
+                    "FP": 319602,
+                    "IoU": 0.2245851798412862,
+                    "TN": 16000976,
+                    "TP": 174332,
+                    "n_pred": 493934,
+                    "n_ref": 456638
+                },
+                "2": {
+                    "Dice": 0.6906771673334311,
+                    "FN": 32337,
+                    "FP": 292559,
+                    "IoU": 0.5275071587400617,
+                    "TN": 16089595,
+                    "TP": 362725,
+                    "n_pred": 655284,
+                    "n_ref": 395062
+                },
+                "3": {
+                    "Dice": 0.881441134619422,
+                    "FN": 13598,
+                    "FP": 6732,
+                    "IoU": 0.7880149734627697,
+                    "TN": 16681313,
+                    "TP": 75573,
+                    "n_pred": 82305,
+                    "n_ref": 89171
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30394_ses-d0039_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30394_ses-d0039_T2w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8515859872202788,
+                    "FN": 40859,
+                    "FP": 167320,
+                    "IoU": 0.741532215510873,
+                    "TN": 15971781,
+                    "TP": 597256,
+                    "n_pred": 764576,
+                    "n_ref": 638115
+                },
+                "2": {
+                    "Dice": 0.912612405756078,
+                    "FN": 63285,
+                    "FP": 29579,
+                    "IoU": 0.8392705697462295,
+                    "TN": 16199450,
+                    "TP": 484902,
+                    "n_pred": 514481,
+                    "n_ref": 548187
+                },
+                "3": {
+                    "Dice": 0.8136828366325864,
+                    "FN": 1810,
+                    "FP": 5042,
+                    "IoU": 0.685889795544146,
+                    "TN": 16755402,
+                    "TP": 14962,
+                    "n_pred": 20004,
+                    "n_ref": 16772
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30395_ses-d1241_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30395_ses-d1241_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8156770325498413,
+                    "FN": 60003,
+                    "FP": 162120,
+                    "IoU": 0.688728543621838,
+                    "TN": 16063617,
+                    "TP": 491476,
+                    "n_pred": 653596,
+                    "n_ref": 551479
+                },
+                "2": {
+                    "Dice": 0.8985784048249479,
+                    "FN": 33154,
+                    "FP": 54677,
+                    "IoU": 0.8158351068848747,
+                    "TN": 16300301,
+                    "TP": 389084,
+                    "n_pred": 443761,
+                    "n_ref": 422238
+                },
+                "3": {
+                    "Dice": 0.8477084724512463,
+                    "FN": 3646,
+                    "FP": 7529,
+                    "IoU": 0.7356718783262767,
+                    "TN": 16734939,
+                    "TP": 31102,
+                    "n_pred": 38631,
+                    "n_ref": 34748
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30397_ses-d0043_T1w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30397_ses-d0043_T1w_stripped.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.34864642130939116,
+                    "FN": 366455,
+                    "FP": 419960,
+                    "IoU": 0.2111276626692146,
+                    "TN": 15780331,
+                    "TP": 210470,
+                    "n_pred": 630430,
+                    "n_ref": 576925
+                },
+                "2": {
+                    "Dice": 0.6871473434678146,
+                    "FN": 19838,
+                    "FP": 370278,
+                    "IoU": 0.5234002003567327,
+                    "TN": 15958676,
+                    "TP": 428424,
+                    "n_pred": 798702,
+                    "n_ref": 448262
+                },
+                "3": {
+                    "Dice": 0.8713544462336733,
+                    "FN": 13346,
+                    "FP": 5348,
+                    "IoU": 0.7720355104629042,
+                    "TN": 16695212,
+                    "TP": 63310,
+                    "n_pred": 68658,
+                    "n_ref": 76656
+                }
+            },
+            "prediction_file": "C:\\Users\\Anna\\Documents\\TFM\\predictions\\sub-OAS30399_ses-d0380_T2w_stripped.nii.gz",
+            "reference_file": "C:\\Users\\Anna\\Documents\\TFM\\nnUNet_raw\\Dataset500_MRI\\labelsTs\\sub-OAS30399_ses-d0380_T2w_stripped.nii.gz"
+        }
+    ]
+}

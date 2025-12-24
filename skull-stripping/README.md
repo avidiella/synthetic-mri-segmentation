@@ -7,7 +7,7 @@ This program is designed to process MRI files (nii.gz) using the **HD-BET** libr
 4. Output
 5. References
 
-# 1. About the package
+# 1. About the program
 
 The contents of this directory are the following:
 * File `main_py`, which executes the program.

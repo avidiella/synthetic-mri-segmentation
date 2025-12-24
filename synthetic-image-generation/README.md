@@ -1,21 +1,21 @@
-This package contains a program designed to generate synthetic MRI images and segmentation masks, primarily using the **lab2im** library (Billot et al. 2020). The program is part of the project _Synthetic Data Generation for MRI Brain Tissue Segmentation: An Evaluation of Model Robustness and Generalization_, and constitutes the component responsible for creating the synthetic training dataset.
+This program is designed to generate synthetic MRI images and segmentation masks, primarily using the **lab2im** library (Billot et al. 2020). The program is part of the project _Synthetic Data Generation for MRI Brain Tissue Segmentation: An Evaluation of Model Robustness and Generalization_, and constitutes the component responsible for creating the synthetic training dataset.
 
 # Table of contents
-1. About the package
-2. How to execute the program
+1. About the program
+2. How to execute
 3. Steps to execute `main.py`
 4. Outputs
 5. References
 
-# 1. About the package
-The contents of the package are the following:
+# 1. About the program
+The contents of this directory are the following:
 * File `main_py`, which executes the program.
 * File `preprocessing_masks.py`, the preprocessing module.
 * File `image_generation.py`, the MRI and segmentation masks generation module.
 * File `requirements.txt`, contains libraries needed to execute the program.
 * File `README.md`, contains information about the program and how to execute it.
 
-# 2. How to execute the program
+# 2. How to execute
 Before executing the program, be sure to install the necessary libraries from `requirements.txt`. It is recommended to create a new python 3.7.1 environment to avoid compatibility problems.
 
 ``pip install -r requirements.txt``

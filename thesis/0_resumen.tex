@@ -1,0 +1,90 @@
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%%%
+%%% CREDITS %%%
+%%%%%%%%%%%%%%%%
+\chapter*{Credits and Copyright}
+This work is licensed under a \href{https://creativecommons.org/licenses/by-nc-nd/4.0/}{Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International} (CC BY-NC-ND 4.0).
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1]{images/license.png}
+\end{figure}
+
+The official code repository of this Master’s Thesis is licensed under \href{https://mit-license.org/}{MIT license}.
+
+
+%%%%%%%%%%%%%
+%%% RECORD %%%
+%%%%%%%%%%%%%
+\chapter*{FINAL PROJECT RECORD}
+
+\begin{table}[ht]
+\centering{}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{r |  p{10cm}}
+\hline
+Title of the project: & Synthetic Data Generation for MRI Brain Tissue Segmentation: An Evaluation of Model Robustness and Generalization\\
+\hline
+Author's name: & Anna Vidiella de Gonzalo\\
+\hline
+Collaborating teacher's name: & Eloy Martínez de las Heras\\
+\hline
+PRA's name: & Laia Subirats Maté\\
+\hline
+Delivery date (mm/yyyy): & 01/2026\\
+\hline
+Degree or program: & Master's Degree in Data Science\\
+\hline
+Final Project area: & Area 3\\
+\hline
+Language of the project: & English\\
+\hline
+Keywords & Brain MRI, deep learning, synthetic data, image segmentation, model generalization\\
+\hline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%
+%%% DEDICATION %%%
+%%%%%%%%%%%%%%%%%%%
+\chapter*{Dedication}
+Al Carles, el professor que em va fer creure que podia assolir totes les fites acadèmiques que em proposés.
+%%%%%%%%%%%%%%%%%%%
+%%% Acknowledgements %%%
+%%%%%%%%%%%%%%%%%%%
+\chapter*{Acknowledgements}
+I would like to express my sincere gratitude to everyone who supported me throughout my master’s studies and during the development of this master's thesis.
+
+First and foremost, I would like to thank Yesua, for their unconditional support throughout this journey. Their encouragement and continuous support were crucial to the successful completion of this thesis and master’s degree.
+
+I would also like to express my sincere gratitude to my supervisor, Dr. Eloy Martínez de las Heras, for his guidance and valuable feedback throughout the development of this project. His expertise was essential to the completion of this project, which has been a great opportunity for my academic growth.
+
+I am also grateful to the NITRC team for granting access to the OASIS-3 dataset, which made the development of this work possible.
+
+Finally, I would like to thank my family and friends for their encouragement and support throughout my studies.
+
+%%%%%%%%%%%%%%%%
+%%% ABSTRACT %%%
+%%%%%%%%%%%%%%%%
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\onehalfspacing
+
+Deep learning models have been very helpful in the medical field, especially for image analysis tasks such as diagnosis and tissue segmentation. However, their performance requires large, diverse training datasets to achieve good generalization. In the case of brain MRI, the availability of real data can be limited due to cost, patient privacy, or ethical concerns. In this scenario, synthetic data has emerged as an alternative for model training. This master’s thesis proposes the generation of synthetic brain MRI images to evaluate the performance of a deep learning model in tissue segmentation tasks. The images were generated using a generative model that synthesizes MRI scans by sampling from a Gaussian Mixture Model, together with the corresponding segmentation labels for gray matter (GM), white matter (WM), and cerebrospinal fluid (CSF). Domain randomization was implemented to introduce variability in contrast and anatomical shapes, with the aim of improving the model’s generalization. Subsequently, an nnU-Net was trained exclusively on the generated synthetic images, and its performance was evaluated on real brain MRI scans. Although the full training pipeline could not be completed due to time constraints, the results show that the model achieves an acceptable performance, implying that synthetic data can be a viable strategy for model training when real brain MRI images are unavailable. 
+
+
+\vspace{1.5cm}
+
+\textbf{Keywords}: Brain MRI, deep learning, synthetic data, image segmentation, model generalization.
+
+\chapter*{Resum}
+
+Els models d’aprenentatge profund han esdevingut eines de molta utilitat per al camp de la recerca mèdica, especialment per a les tasques d'anàlisi d'imatge com el diagnòstic i la segmentació de teixits. Tanmateix, el seu bon rendiment requereix conjunts de dades grans i diversos per aconseguir una bona generalització. En el cas de la ressonància magnètica cerebral, la disponibilitat de dades reals pot ser limitada degut al cost, la privacitat dels pacients o qüestions ètiques. En aquest escenari, les dades sintètiques han emergit com una alternativa a les dades reals per a l'entrenament dels models. Aquest treball de final de màster proposa la generació d'imatges sintètiques de ressonància magnètica cerebral per avaluar el rendiment d'un model de aprenentatge profund en tasques de segmentació de teixits. Les imatges s'han creat fent servir un model generatiu que sintetitza ressonàncies magnètiques a partir d’un model de Barreja Gaussiana, amb les màscares de segmentació corresponents per a la substància grisa (SG), substància blanca (SB) i líquid cerebroespinal (LC). S'ha implementat l'aleatorització de domini per introduir variabilitat en contrast i formes anatòmiques, amb l'objectiu de millorar la generalització del model. Una nnU-net s'ha entrenat exclusivament amb les imatges sintètiques generades, i posteriorment s'ha avaluat la capacitat de generalització del model sobre imatges de ressonància magnètica reals. Tot i no haver-se completat el procés d'entreament en la seva totalitat a causa de restriccions temporals, els resultats mostren que el model assoleix un rendiment acceptable, suggerint que l'ús de dades sintètiques és una estratègia viable a l'hora d'entrenar models quan no hi ha dades reals de RM disponibles.
+
+\vspace{1.5cm}
+
+\textbf{Paraules clau}: RM cerebral, aprenentatge profund, dades sintètiques, segmentació d'imatges, generalització de models.

@@ -1,0 +1,75 @@
+\chapter{Introduction}
+\label{chapter:introduction}
+
+%%% SECTION
+\section{Overview of the problem}
+
+Currently, data mining processes require large amounts of data, which often contain personal and private information of users or individuals. Although basic anonymization processes are carried out on the data, such as the elimination of names or other key identifiers, there are many re-identification techniques that allow a user to be identified within this data set. Figure \ref{fig:context-anoni1} shows a map where it is possible to contextualize anonymization and re-identification processes within a data mining process.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figs/image1.png}
+\caption{Caption of the image.}
+\label{fig:context-anoni1}
+\end{figure}
+
+\subsection{Example of subsection}
+
+Although significant advances have been made in privacy preservation in data publishing, such as the \textit{k}-anonymity model \cite{Sweeney:2002}.
+
+An example of pseudocode can be found in Code \ref{code:RandomSwitch-1}.
+
+\begin{algorithm}
+\caption{Pseudocode of the \textit{Random Switch} algorithm}
+\label{code:RandomSwitch-1}
+\begin{algorithmic}
+\REQUIRE{The original graph $G$ and the anonymization percentage $p$ to be applied.}
+\ENSURE{The anonymized graph $G$.}
+\STATE $num = round(G.num_edges() * p)$
+\STATE $i = 0$
+\WHILE {$i < num$}
+\STATE {$e_{1} = G.random_edge()$}
+\STATE $e_{2} = G.random_edge()$
+\STATE $new_{e_{1}} = (e_{1}.source, e_{2}.source)$
+\STATE $new_{e_{2}} = (e_{1}.destination, e_{2}.destination)$
+\IF {$!G.exist(new_{e_{1}})$ \AND $!G.exist(new_{e_{2}})$}
+\STATE $G.add_edge(new_{e_{1}})$
+\STATE $G.add_edge(new_{e_{2}})$
+\STATE $G.delete_edge(e_{1})$
+\STATE $G.delete_edge(e_{2})$
+\STATE $i=i+1$
+\ENDIF
+\ENDWHILE
+\RETURN $G$
+\end{algorithmic}
+\end{algorithm}
+
+An example of a table can be seen in Table \ref{table:ejemplo_vertex_refi_query}.
+
+\begin{table}
+\centering{}
+\begin{tabular}{ l || c | c | l }
+\hline
+Node ID & $\mathcal{H}{0}$ & $\mathcal{H}{1}$ & $\mathcal{H}_{2}$ \\
+\hline
+\hline
+Alice & $\epsilon$ & 1 & {4} \\
+\hline
+Bob & $\epsilon$ & 4 & {1, 1, 4, 4} \\
+\hline
+Carol & $\epsilon$ & 1 & {4} \\
+\hline
+Dave & $\epsilon$ & 4 & {2, 4, 4, 4} \\
+\hline
+Ed & $\epsilon$ & 4 & {2, 4, 4, 4} \\
+\hline
+Fred & $\epsilon$ & 2 & {4, 4} \\
+\hline
+Greg & $\epsilon$ & 4 & {2, 2, 4, 4} \\
+\hline
+Harry & $\epsilon$ & 2 & {4, 4} \\
+\hline
+\end{tabular}
+\caption{\textit{Vertex refinement queries}.}
+\label{table:ejemplo_vertex_refi_query}
+\end{table}

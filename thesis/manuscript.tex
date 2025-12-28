@@ -1,0 +1,632 @@
+\documentclass[12pt,a4paper,twoside]{book}
+\usepackage{graphicx}
+\usepackage{setspace} %double spacing for text, single for captions, footnotes, etc.
+%\usepackage{hypernat} %substitute for cite that allows hyperlinks
+\usepackage{natbib} % substitute for 'hypernat' that works on Windows.
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{hhline} % extended styles for tables
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{acronym}
+\usepackage{hyperref}
+\usepackage{amsmath,amsmath,amssymb}
+\usepackage{fancyhdr}
+\usepackage{epsfig, amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% general settings
+\hypersetup{
+linktocpage=true,
+colorlinks=true,
+linkcolor=blue,
+citecolor=blue,
+}
+\definecolor{Hgray}{gray}{0.6}
+
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\setlength{\topmargin}{0cm}
+\setlength{\textheight}{23cm}
+\setlength{\textwidth}{17cm}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\headheight}{1cm}
+% indicates that 'sub-sub-sections' are numbered and appear in the index
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+% settings for code
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+%%%%%%%%%%%%
+% DOCUMENT %
+%%%%%%%%%%%%
+\begin{document}
+
+\setcounter{section}{0} % Resets the section counter to 0 at the document's start
+\renewcommand{\thesection}{\arabic{section}} % Changes the section numbering scheme
+
+% cover page
+\input{0_titulo.tex}
+\newpage
+% abstract
+\input{0_resumen.tex}
+\newpage
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{ \thesection.\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]{\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]{\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+
+% table of contents
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table of Contents}
+\tableofcontents
+% list of figures
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+% list of tables
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\thispagestyle{empty}
+
+\pagenumbering{arabic}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{ \thesection.\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]{\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]{\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+
+\onehalfspacing
+
+% chapters of the document
+\chapter{Introduction}
+\section{Context and Motivation}
+In the recent years, artificial intelligence (AI) has become a popular tool in many areas, but specially in the medical field. According to \citet{jiang2017artificial}, the use of deep learning in the field of medical research nearly doubled in 2016, with imaging analysis being the most predominant area of application. Machine learning models rely on data, and the quantity and quality of it directly affects the success of ML-based applications \citep{thambawita2022singan}. However, many real imaging datasets lack the diversity and scope to train robust models for computer vision tasks \citep*{gopinath2024synthetic}. This is due to two reasons: economic cost and patient privacy.
+
+Regarding the monetary cost associated to obtaining or processing medical images, the use and maintenance of MRI equipment is highly expensive. The overall expense includes not only the purchase of the scanner, but also the infrastructure, workforce salaries, maintenance, contrast agents, and the energy required to operate it \citep{jalloul2023mri}. As a result, economic constraints often limit MRI availability to clinically prioritized applications, making it less accessible for research purposes. Moreover, even when medical images are obtainable, acquiring high-quality annotations is time-consuming and requires expert knowledge, further increasing the associated costs of obtaining labeled data for model training purposes \citep{gopinath2024synthetic}.
+
+As for the second reason, medical data may not be available due to privacy or ethical concerns. The first reason is because patients should give consent to allowing their data to be used for research purposes, which constraints the available data. The second reason is because medical data, even if given consensually, represents sensitive personal information, and as such, must be treated and protected according to legal and ethical standards \citep{conduah2025data}, which may prove a difficult task for some organizations. Furthermore, privacy concerns and regulations can also vary across countries and regions, making it difficult to obtain data from certain areas, and to ensure diversity in medical datasets.
+
+In this scenario, synthetic data becomes a valuable resource as a substitute for real data in image analysis tasks. First, it does not face the same privacy issues as real data \citep{gopinath2024synthetic, paproki2024synthetic}. Second, the development of deep learning models dedicated to segmentation, such as SynthSeg \citep{billot2023robust}, drastically reduces the costs associated to annotation \citep{valabregue2024comprehensive}. Lastly, even if the generation of synthetic images may present an elevated computational cost, it is not as expensive as real MRI, making synthetic data more accessible economically.
+
+Taking this into consideration, the present thesis aims to address and evaluate the use of synthetic data to train models for brain MRI segmentation. The choice of this topic was heavily influenced by my academic background. As a researcher in the behavioral sciences, I recognize the high value of neuroimaging in many fields, including neuropsychology, clinical psychology, cognitive psychology, among others. However, as previously stated, access to high-quality MRI images is often limited.
+
+Additionally, some research groups may lack access to advanced computational resources, such as dedicated GPUs or high-performance computing infrastructure, a limitation that also applies to certain clinical settings. This thesis also aims to address the lack of powerful computational infrastructure by proposing a methodology that remains feasible in resource-constrained environments.
+
+In summary, through this master’s thesis, I aim to contribute to behavioral sciences and medical research by applying deep learning techniques to address challenges I have previously encountered in my career, particularly the limited availability of real brain MRI data and the lack of access to advanced computational infrastructure.
+
+\section{Goals}
+The goals of this project are divided into primary and secondary objectives. The primary goals represent the general objectives of this master’s thesis, while the secondary ones consist of the specific tasks and steps required to achieve the main goals.
+
+Primary goals:
+\begin{itemize}
+\item To assess the potential of synthetic data as a substitute for real brain MRI images in training deep learning models when real data are unavailable. This will be done through evaluation of model generalization on real brain MRI images.
+\end{itemize}
+
+Secondary goals:
+\begin{itemize}
+\item Generate a set of synthetic brain MRI images. This set will contain MRI scans and their corresponding masks segmenting gray matter (GM), white matter (WM), and cerebrospinal fluid (CSF).
+\item Build and train a nnU-Net with the generated data, then evaluate the model performance.
+\end{itemize}
+
+\section{Sustainability, Diversity, and Social Challenges}
+\subsection{Sustainability}
+Artificial intelligence has proven a powerful tool in many fields, especially in medical research and healthcare. However, one of the biggest concerns is the requirements for computational resources, energy demands, and the environmental impact associated with model training and deployment.
+
+The present project involves three major computational tasks: synthetic image generation, data pre-processing and model training. They will be carried out using standard computing resources and infrastructure, such as a personal laptop and a personal computer (see section \ref{sec:Available resources} for further information on the software and hardware resources). Thus, the development of this project does not require energy use or resource consumption beyond the typical research or academic activity.
+
+Furthermore, the present project aims to assess the potential of synthetic data for segmentation model training purposes, aiming to explore a solution to resource-intensive real MRI, thus promoting innovation and optimization of resources in medical research.
+
+Considering the previous statements, this project aims to address the following Sustainable Development Goals (SDG):
+\begin{itemize}
+	\item SDG 7 - Affordable and Clean Energy: Decrease energy consumption in model development and synthetic image generation.
+	\item SDG 9 – Industry, innovation, and infrastructure: Promote innovation and optimize resource utilization in medical research.
+	\item SDG 12 - Responsible Consumption and Production: Optimize the use of computational resources and minimize the sustainability impact during model development.
+	\item SDG 13 - Climate Action: Decrease energy and carbon footprint by optimizing resource use and energy consumption.
+\end{itemize}
+
+\subsection{Diversity, Gender and Human Rights}
+The result of this project is primarily technical, as it focuses on the development and validation of technical tools rather than on social aspects. There may not be any direct positive or negative impact in terms of gender or diversity; good practices, nonetheless, will be followed to ensure the use of gender-neutral language, in accordance with the guidelines outlined in the \textit{Gender Toolkit} of the Universitat Oberta de Catalunya \citep{gendertoolkit}.
+
+Moreover, this project does not directly involve human participants. All the datasets containing real data used are publicly available and do not include any identifiable information. Therefore, it does not have an impact on human rights, laws, or regulations, and is compliant with data protection standards and ethical research practices.
+
+Finally, regarding accessibility, disability, and ergonomics, this project is considered to have no direct impact on those aspects, since it is conducted within an academic research environment. Given the purely technical scope of this project, it will not entail accessibility-related factors. However, best practices will be applied to all plots and figures to ensure accessibility for individuals with color blindness.
+
+In summary, regarding diversity, this project aims to address the following Sustainable Development Goals:
+
+\begin{itemize}
+	\item SDG 5 – Gender Equality: Commitment to use inclusive language throughout the development of the project and in any document related to it.
+	\item SDG 16 – Peace, Justice, and Strong Institutions: By adhering to ethical standards and promoting transparency, accountability, and responsible practices in medical research, and by following good practices to make the manuscript accessible.
+\end{itemize}
+
+\subsection{Ethical Behavior and Social Responsibility}
+While the result of this project is primarily technical, it may have a positive social impact regarding innovation related to medical research and data accessibility.
+
+As its main objective is to evaluate the use of synthetic data as a substitute for real MRI for training models, a benefit could be found for agents such as research groups or clinicians who may not have access to neuroimaging resources or real MRI data. Additionally, synthetic data can be openly shared with fewer limitations than real data \citep{gopinath2024synthetic}, becoming a useful resource as a substitute for real images in specific scenarios.
+
+As stated in previous sections, real MRI data were used as ground truth for synthetic image generation and model evaluation in order to assess model generalization. These data were obtained from the NITRC repository, with access granted upon compliance with applicable data protection and ethical guidelines. In addition, no personal, sensitive, or identifying information was used on this project, thereby protecting the privacy of individuals adhering to ethical standards in medical research. Good practices suggested by the Universitat de Catalunya’s Research Ethics Committee were followed to ensure data protection throughout the whole project, covering the whole data lifecycle, ensuring correct management, protection, and deletion of the real data used to perform this work once the project is completed.
+
+To ensure ethical behavior and social responsibility, this project aims to address the following Sustainable Development Goals:
+
+\begin{itemize}
+	\item SDG 10 – Reduced Inequalities: Working on developing alternatives to real MRI data, which can be useful for research groups or clinical environments with low computational or MRI-related resources.
+	\item SDG 16 – Peace, Justice, and Strong Institutions: By ensuring proper data management and patient privacy protection, this project promotes transparency, accountability, and responsible practices in medical research.
+\end{itemize}
+
+\section{Approach and Methodology}
+\label{sec:Approach and methodology}
+The present project begins with a literature review on the state of the art regarding image synthesis, segmentation tools and the use of synthetic data for brain tissue segmentation, followed by a definition of a problem, which is the lack of real MRI data in certain contexts. A proposed approach to address this issue is the generation of synthetic data followed by model training and evaluation of model generalization on real data.
+
+Considering the tasks described for the development of this project, a structured approach is required to ensure that it can be carried out successfully. Given its academic nature, it is necessary that the chosen methodology ensures reproducibility and transparency, while also allowing some degree of flexibility, not only to assume certain overlap between phases, but to also allow the possibility of going back and forth between them to refine aspects if adjustments are needed. For these reasons, the best-suited option is the CRISP-DM methodology, which combines a systematic structure while allowing to iterate throughout the phases as needed.
+
+The CRoss-Industry Standard Process for Data Mining is a data mining model that defines a series of good practices to be applied in data mining projects \citep{shearer2000crisp}. Despite the specificity of this methodology, it has been designed to be generic enough to be applied to any industry \citep{gouvea2021crispdm}. CRISP-DM organizes the processes into six distinct stages (see Figure \ref{fig:crispdm}). Considering the scope and objectives of this project, and the chosen methodology, the planning of the project would be the following:
+
+\begin{itemize}
+	\item \textbf{Business Understanding.} This phase is centered on determining the objectives of the project, and developing a project plan. In the case of this thesis, this stage includes the revision of the available literature on the matter on hand. Additionally, it also includes the preparation of the state of the art review.
+	\item \textbf{Data Understanding.} In this phase, the data mining process takes place. For this project, this includes the generation of a set of synthetic data, as well as requesting access to OASIS-3 dataset for real brain MRI images. Once the data mining process is completed, the exploration and verification of the data takes place.
+	\item \textbf{Data Processing.} During this phase, images are be prepared to be analyzed for quality assessment and for modeling, performing tasks such as skull-stripping, intensities normalization, etc.).
+	\item \textbf{Modeling.} After data processing, the model (nnU-Net) is implemented. Once ready, the model is trained with the synthetic data.
+	\item \textbf{Model Evaluation.} Once the model is trained, the model generalization is evaluated on real data.
+	\item \textbf{Deployment.} This is the final phase of the project. This includes any work related to the model deployment, and the elaboration of the final report, which is the thesis manuscript. In the case of the present project, the thesis manuscript was written throughout all stages to comply with the different milestones set to follow the Continuous Assesment Test planning. However, this phase is crucial to write the final chapters and make additional modifications, so the manuscript serves as a final report of the project.
+\end{itemize}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./figs/CRISPDM_v01_20251012.png}
+	\caption{Process diagram showing the different stages of CRISP-DM \citep{shearer2000crisp}}
+	\label{fig:crispdm}
+\end{figure}
+
+\section{Project Planning}
+\subsection{Available Resources}
+\label{sec:Available resources}
+The software and hardware resources used to carry out this project are:
+\begin{itemize}
+	\item Laptop with Intel(R) Core(TM) i7-10870H processor @ 2.20GHz, NVIDIA GeForce RTX 1650 VRAM 4GB, 16.0 GB RAM, and Windows 11.
+	\item Personal Computer with AMD Ryzen 5 5600 6-core Processor @ 3.50GHz, NVIDIA GeForce RTX 3060 VRAM 12GB, and Windows 11.
+	\item TeXtudio version 4.8.9 to write the thesis in LaTeX.
+	\item Conda 24.11.3 as environment manager.
+	\item PyCharm Community Edition 2024.3 as IDE to elaborate python files and programs.
+	\item Jupyter Notebook version 7.4.5 with IPython kernel v.9.7.0 to execute specific coding tasks and analyses.
+	\item Python versions 3.7.1, 3.10.19 and 3.12.12 in different conda environments created to avoid incompatibilities with tools and libraries.
+\end{itemize}
+
+Additionally, there are other resources that have been used to develop this project: 
+\begin{itemize}
+	\item Neuro Imaging Tools \& Resources Collaboratory (NITRC), a web-based resource that offers resources and information related to neuroinformatics software and data, such as dataset OASIS-3.
+\end{itemize}
+
+\subsection{Schedule}
+The project has been divided into six different stages according to the CRISP-DM methodology (see section \ref{sec:Approach and methodology}), and its development has been scheduled according to the dates set for the Continuous Assessment Tests. Taking all these factors into consideration, the project has been planned as follows:
+
+\begin{itemize}
+	\item \textbf{Module 1: Thesis proposal.} This module includes the definition and planning of the master's thesis.
+	\item \textbf{Module 2: State of the Art.} This module includes a review of the literature regarding the topic of the project, and includes the tasks under the business understanding phase, which are the literature research and the state of the art review.
+	\item \textbf{Module 3: Implementation.} In this module, the tasks specific to the project are carried out. This includes the following stages and tasks:
+	\begin{itemize}
+		\item Data Understanding, compromising all the tasks related to the data mining process, that is, the generation of synthetic data, the research for real data and the data overview.
+		\item Data Processing, in which all the necessary transformations are applied on the data so it can be correctly processed by the model.
+		\item Modeling, in which the nnU-Net is implemented and trained with the synthetic data.
+		\item Evaluation, in which the model evaluation is carried out.
+	\end{itemize}
+	\item \textbf{Module 4: Thesis manuscript.} This module is focused on finishing the thesis manuscript, which is redacted throughout the different project stages. During this module, the model deployment is carried out, and the final chapters of the thesis are written concurrently.
+	\item \textbf{Module 5: Audiovisual presentation.} This module includes the preparation of the oral presentation of the thesis, which should take place once the manuscript has been written.
+\end{itemize}
+
+The described schedule has been represented in a Gantt diagram in Figure \ref{fig:gantt}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{./figs/Gannt_v01_20251012.jpg}
+	\caption{Gantt chart for the project.}
+	\label{fig:gantt}
+\end{figure}
+
+\chapter{State of the Art}
+\section{Introduction to Medical Image Analysis}
+Medical imaging plays a critical role in modern healthcare, allowing clinicians to visualize the internal structures and functions of the body non-invasively. In recent decades, medical imaging methods, including computed tomography (CT), magnetic resonance imaging (MRI), positron emission tomography (PET), mammography, ultrasound, and X-ray, have played a crucial role in early detection, diagnosis, and management of various diseases \citep{shen2017deep}.
+
+For brain imaging, MRI remains the preferred modality for structural analysis, given the lack of ionizing radiation and its superior contrast resolution for soft tissues \citep{chau2025scoping}. In clinical and research contexts, MRI is used extensively in tasks such as detection of anatomical and cellular structures, tissue segmentation, and computer-aided disease prognosis and diagnosis \citep{shen2017deep}. As this project has as its main topic brain image segmentation, this review will be focused on that specific task.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{./figs/neuro_triplet_view.png}
+	\caption{T1-weighted MRI slices of the brain in axial, sagittal, and coronal planes. Image extracted from OASIS-3 dataset \citep{lamontagne2019oasis}.}
+	\label{fig:neuro_triplet_view}
+\end{figure}
+
+Medical image segmentation is the process of dividing an input medical image into meaningful areas to identify and isolate distinct segments considered regions of interest (ROIs), such as tissues, organs, or lesions. On brain imaging, segmentation has diverse applications such as delineating brain tumor boundaries in MRI images \citep{soppari2024survey}; the identification of lesions and abnormalities associated with medical conditions \citep{chau2025scoping}; and the segmentation of GM, WM and CSF \citep{chau2025scoping, shen2017deep}. The latter is relevant for detecting atrophy and identifying morphological changes associated with neurodegenerative conditions such as Alzheimer’s disease, Parkinson’s disease, multiple sclerosis or psychiatric disorders like schizophrenia \citep{shen2017deep}.
+
+Given the wide variations in pathology and the potential fatigue of human experts, researchers, and doctors, the development of tools that can perform automated or semi-supervised analysis of these images has become a valuable resource in both clinical practice and medical research. The next section provides a general overview of the different techniques used on computer vision for brain MRI segmentation.
+
+\section{Deep Learning Applications for MRI Segmentation}
+According to the systematic review performed by \citet{chau2025scoping},  ML models, convolutional neural network-based models (CNN) and FreeSurfer have been the AI-related tools more used for brain segmentation in the last decade. Other methods, although less popular, include Statistical Parametric Mapping (SPM), Voxel-Based Morphometry (VBM), and hybrid approaches.
+
+\subsection{Machine Learning Algorithms}
+While many machine learning algorithms can be applied to MRI Segmentation tasks, Support Vector Machine (SVM) and RandomForest, both classification algorithms, are the most frequently used, mainly to classify brain structures or predict outcomes based on segmented data. These methods are, however, not specifically designed for image segmentation, and thus they usually need to be combined with additional methods to perform a segmentation analysis such as Voxel-Based Morphometry \citep{chau2025scoping}.
+
+\subsection{Convolutional Neural Networks and CNN-based models}
+CNNs have proven a powerful tool for computer vision, especially for medical imaging analysis, thanks to their ability to directly learn hierarchical representations from raw pixel data \citep{thakur2024deep}. In recent years, CNNs have demonstrated superior performance than ML algorithms in brain MRI segmentation \citep{chau2025scoping}. Hence why it is one of the most popular methods.
+
+The most prominent architecture of this kind in biomedical image segmentation is the U-Net, introduced by \citet{ronneberger2015u}, a method designed for that specific purpose. Its symmetric encoder-decoder architecture includes a contracting path that captures contextual information and an expanding path that enables precise localization of the ROIs \citep{ronneberger2015u}. 
+
+Due to the greater suitability for segmentation tasks exhibited by U-Net, over the past decade different architectures have been proposed to improve its performance, efficiency, and adaptability across different data types, and hardware limitations. Some well-known examples include 3D U-Net \citep{cciccek20163d}, Attention U-Net \citep{oktay2018attention}, Inception U-Net \citep{szegedy2015going}, Residual U-Net \citep{he2015deepresiduallearningimage}, Dense U-Net \citep{huang2018denselyconnectedconvolutionalnetworks}, nnU-Net \citep{isensee2018nnu} and UNet++ \citep{zhou2018unetnestedunetarchitecture}. More recently, novel architectures based on U-Net have been introduced, such as SSA U-Net \citep{jiang2024ssa}, DPF-Unet \citep{li2025dpf}, FFLUnet \citep{kundu2025fflunet}, and NNDM \citep{makanaboyina2025nndm}.
+
+\subsection{Other Architectures and Applications}
+Although not based on deep learning or widely adopted, there are alternative tools to approach brain MRI segmentation. 
+
+\subsubsection{FreeSurfer}
+FreeSurfer is a software platform for neuroimaging analysis widely used as a tool for brain MRI segmentation, and has proven to be very powerful in the specific task of cortical and subcortical structures segmentation \citep{fischl2012freesurfer}. Although it is not a standalone AI model or architecture, it incorporates AI-based methodologies, and given that it is in the top three most used segmentation methods in the last decade \citep{chau2025scoping}, it is worth mentioning as a state-of-the-art segmentation tool.
+
+\subsubsection{Statistical Parametric Mappingand Voxel-based Morphometry}
+Statistical Parametric Mapping (SPM) is a software package designed for the analysis of brain imaging data sequences developed by \citet{friston2003statistical}. Its integrated segmentation algorithm uses a Gaussian Mixture Model (GMM) that assigns each voxel a probability of belonging to a specific tissue based on its intensity and spatial location \citep{chau2025scoping}.
+
+VBM is an application that performs a voxel-wise comparison of the local concentration of gray matter between two groups of subjects, finding patterns of differences between individuals and a reference dataset \citep{ashburner2000voxel}.
+
+\subsubsection{Hybrid Approaches}
+Hybrid approaches are those defined by the combination of different methods responding to different research needs. For instance, \citet{perez2023classifying} performed gray matter volumes and cortical thickness measures using FreeSurfer, applied principal component analysis (PCA) for dimensionality reduction, and then used a SVM to classify patients with Alzheimer’s disease, fronto-temporal dementia and healthy controls. Even with accessible and powerful deep learning methods such as U-Net, hybrid approaches still obtain valuable results and enhance segmentation accuracy in clinical cohorts \citep{chau2025scoping}.
+
+\section{Synthetic Data for Model Training}
+As discussed previously, access to medical data can be restricted due to privacy concerns, and obtaining or processing MRI images can be resource-intensive, making it challenging to obtain sufficient data for research purposes. Additionally, real world data can present class imbalance, considering that in many medical images presenting a medical condition are scarce in comparison to healthy samples \citep{qu2020assessing}.
+
+An alternative approach to these limitations is the generation of synthetic data, which can be shared with less limitations \citep{gopinath2024synthetic},  and used for data augmentation purposes \citep{thambawita2022singan, paproki2024synthetic}, reducing class imbalance and dataset bias \citep{sun2017revisiting}, and improving model generalization through the creation of different image variations.
+
+One limitation often attributed to artificial data is its potential dissimilarity to real data, which can have an adverse effect on model generalization. The domain gap existent between real and synthetic data (sim2real) remains an open challenge when training models with synthetic data, as it often leads to overfitting to their data distribution and poor performance on real data \citep{paproki2024synthetic}. However, there are methods that mean to tackle this issue, such as domain adaptation, transfer learning, multicenter collaboration \citep{thakur2024deep}, or domain randomization.
+
+An especially successful approach is the latter, domain randomization, introduced by \citet{tobin2017domain}. This method is based on the hypothesis that if the variability in the simulated data is great enough, models will generalize to the real world data with no need of additional training. In MRI analysis, domain randomization has been successfully applied in tasks such as structural segmentation, skull stripping, registration, feature extraction, image-to-image translation and super-resolution reconstruction \citep{hoffmann2025domain}.
+
+In tandem with techniques aimed to address the domain gap, synthetic data represents a promising approach to overcome the limitations related to the lack of real MRI data. The following section presents the methods used for synthetic data generation.
+
+\section{Synthetic Data Generation Methods}
+Since 2015, a variety of generative models have been described for creating synthetic medical images \citep{koetzier2024generating}. Amongst of the most popular methods are generative adversarial networks (GANs), variational autoencoders (VAEs), and diffusion models. While GAN-based architectures are yielding the best results in the medical domain \citep{thambawita2022singan}, other interesting approaches exist.
+
+\subsection{Basic Image Transformation}
+Image transformation is not exactly a form of synthetic data generation, falling within the category of semi-synthetic data generation methods. It involves creating new images from real images using operations like geometric transformations (such as rotations or cropping), color space transformations, or kernel filtering \citep{paproki2024synthetic}.
+
+\subsection{Computer Aided Design and Computer Generated Imagery}
+These include all applications that create 3D surface models of artificial objects, usually with software tools such as Unity3D, Blender, or the Unreal graphic engine, to simulate specific situations, and then render imaging data \citep{paproki2024synthetic}. Computer aided design (CAD) and computer generated imagery (CGI) have proven to be useful tools, as the created images can be tailored to specific applications. The image generation itself is, however, labor intensive. Some popular CGI based datasets include the surreal dataset \citep{varol17_surreal} and the human 3.6M dataset \citep{h36m_pami}.
+
+\subsection{Generative Adversarial Networks}
+GANs are among the most widely used architectures for synthetic image generation in the medical field, as they can produce highly realistic representations of image data. Their architecture consists of two different networks: a discriminator, which determines if an image is real or fake, and a generator, which attempts to create realistic images to fool the discriminator. The dynamic established between generator and discriminator allows to progressively produce more refined images with each iteration. Given the potential of this architecture, many variations of the GAN architecture have been developed to surpass the limitations of vanilla GANs and allow for the synthesis of high-resolution images \citep{paproki2024synthetic}, such as Deep-convolutional GAN \citep{radford2016unsupervisedrepresentationlearningdeep} Laplacian GAN \citep{denton2015deepgenerativeimagemodels}, pix2pix \citep{isola2018imagetoimagetranslationconditionaladversarial} and Cyclic GAN \citep{zhu2017unpaired}.
+
+\subsection{Variational Autoencoders}
+VAEs are a type of artificial neural network introduced by \citet{kingma2022autoencodingvariationalbayes}. Their architecture is based on an encoder and a decoder, where the encoder maps input data to compress it into a lower dimensional space, and the decoder reconstructs the data to regenerate a plausible version of the original input. Based on this framework, \citet{larsen2016autoencoding} introduced a variation of VAEs in tandem with GANs named VAE-GANs, that combine both the generative capabilities of a VAE with the adversarial training of GANs.
+
+\subsection{Generative Diffusion Models}
+Generative diffusion models are a family of generative models that apply a reverse diffusion process to synthesize images from random noise \citep{yeugin2024generative}. During the training phase, real images are gradually corrupted with Gaussian noise, and the model learns to reverse this process to recover detailed and realistic data representations \citep{koetzier2024generating}. Although image generation is time-intensive, the high quality of the resulting images makes diffusion models a promising tool in the medical imaging field.
+
+\section{Model Development with Synthetic Data}
+Many high-performing tools related to MRI processing and analysis have been developed by training deep learning models on synthetic data \citep{gopinath2024synthetic}.
+
+\begin{itemize}
+	\item \textbf{SynthSR} \citep{iglesias2023synthsr}.  A CNN for super-resolution that turns a MRI scan or CT scan of any orientation, resolution and contrast into 1 mm isotropic Magnetization Prepared Rapid Gradient Echo (MP-RAGE). The method applied by the authors was based on applying random deformations to segmentation masks, which were later used to generate synthetic scans. This strategy exposes the model to a wide range of acquisition conditions during training, resulting in strong generalization across MRI sequences and high robustness to overfitting.
+	\item \textbf{SynthStrip} \citep{hoopes2022synthstrip}: A deep learning tool for brain extraction (skull stripping) from MRI scans. It was entirely trained on synthetic data, enabling robust generalization across a wide range of real MRI scans, including both adult and newborn anatomies. SynthStrip has demonstrated accurate and robust brain extraction, outperforming baseline methods such as BET.
+	\item \textbf{SynthMorph} \citep{hoffmann2021synthmorph}: A deep learning–based framework for MRI image registration trained on synthetic images and label maps with arbitrary contrasts and shapes, enabling accurate and robust registration across real MRI scans. It achieves performance that surpasses state of the art tools both within and across imaging contrasts.
+	\item \textbf{EasyReg} \citep{iglesias2023ready}: A CNN for symmetric multi-modality registration of brain MRI that is also contrast-agnostic because of the training with synthetic data. This tool has demonstrated the same accuracy as classical registration methods, but is also much more accurate across modalities and resolutions thanks to domain randomization.
+	\item \textbf{SynthSeg} \citep{billot2023synthseg}: A CNN for segmentation trained on synthetic data, adopting a domain randomization strategy that randomizes image contrast and resolution to obtain a model capable of segmenting real scans from a wide range of target domain without requiring fine-funing, while achieving great robustness to a wide range of morphological variability.
+\end{itemize}
+
+The current project is based on the methodology followed for the development of SynthSeg \citep{billot2023synthseg}. The main objective is to train a model on synthetic MRI scans and corresponding segmentation masks while applying domain randomization. Through the inclusion of spatial deformations, different contrasts, orientations, and noise levels, the model learns not to rely on these features when estimating the output, becoming agnostic to them. To carry out these tasks, this work uses Gaussian Mixture Models for synthetic image generation and a nnU-Net to implement a brain MRI segmentation model.
+
+Images are generated with \texttt{lab2im}, a library for generating images by sampling a GMM conditioned on label maps \citep{billot:2020}. For each image, the GMM parameters are sampled from prior distributions of predefined hyperparameters, creating differences for appearance, deformation, noise, and bias field, thus generating a dataset diverse enough that the trained segmentation model becomes contrast-agnostic \citep{billot:2020}.
+
+ Additionally, data augmentation is also performed including spatial deformation of the label maps, random cropping, random blurring, and intensity augmentation steps such as bias field corruption, and gamma augmentation \citep{billot:2020}. 
+
+ An example of synthetic MRI and segmentation masks generated with \texttt{lab2im} can be found in Figure \ref{fig:lab2im_synth_exmaple}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./figs/lab2im_synth_example.png}
+	\caption{Synthetic brain MRI scans generated with \texttt{lab2im} \citep{billot:2020}.}	\label{fig:lab2im_synth_exmaple}
+\end{figure}
+
+The implemented model is a nnU-Nnet ('no new net'), a U-Net architecture introduced by \citet{isensee2018nnu} with a strong performance on segmentation tasks. nnU-Net is a self-configuring deep learning-based segmentation method that automatically configures itself, including preprocessing, network architecture, training and post-processing.
+
+Thanks to its automated configuration, nnU-Net is fast and simple to implement, and requires very little computational resources beyond standard model training \citep{isensee2018nnu}. Additionally, nnU-Net is dataset-agnostic, and automatically adapts to a new dataset by systematically addressing the configuration of the segmentation pipelines \citep{isensee2018nnu}. Finally, it is worth noting that nnU-Net is considered 'data efficient',  as its encoding design is based on a wide range of datasets that serves as inductive bias for application to datasets with scarce training data \citep{isensee2018nnu}.
+In the following sections, the implementation of the project using these methods is be detailed.
+
+\chapter{Methods and Resources}
+\section{Dataset}
+The dataset used for this project is The Open Access Series of Imaging Studies 3 (OASIS-3), by \citet{lamontagne2019oasis}. OASIS-3 is a multimodal collection of data from 1378 participants collected across several projects through the Charles F. and Joanne Knight Alzheimer Disease Research Center during the course of 30 years.
+
+Along with PET scans, this dataset includes a total of 2842 magnetic resonance sessions (including different contrast modalities), most of them accompanied by volumetric segmentation files produced with FreeSurfer, of 755 cognitively normal adults and 622 individuals at various stages of cognitive decline ranging in age from 42 to 95 years \citep{lamontagne2019oasis}.
+
+All neuroimaging scans were conducted by the Knight Alzheimer Research Imaging Program at Washington University in St. Louis. Specifically, MRI was collected on 3 different Siemens Medical Solutions USA, Inc. scans: Vision 1.5T, TIM Trio 3T, and BioGraph mMR PET-MR 3T. High-resolution structural sequences include T1-weighted (T1w), T2-weighted (T2w), FLAIR, and Turbo Spin Echo (TSE), susceptibility-weighted imaging (SWI), diffusion-weighted imaging (DWI), arterial spin labeling (ASL), resting-state BOLD, field maps, and time of flight.
+
+T1w images collected on 1.5T scanners were processed with FreeSurfer v5.0 or v5.1, while T1w images from 3T scanners were processed with FreeSurfer v5.3. After segmentation, a trained specialist reviewed the images to ensure accuracy and quality control, deciding whether they were valid or should be rerun through the XNAT pipeline.
+
+For the current project, 150 subjects were randomly selected and split into two independent subsets: a training set and a test set. As the OASIS-3 dataset is designed for longitudinal analyses and allows multiple sessions per subject, only a single session per subject was selected to avoid similarities between scans in the selected sample. Considering this restriction, random selection was applied to ensure representativeness and avoid selection bias. Additionally, as this project does not specifically focus on finding pathological markers or structural differences among groups, information about cohorts of any kind was not included in the analysis and has not affected in any way the sample selection.
+
+\subsection{Training Data}
+For the training data, a total of 50 different subjects were randomly selected from the OASIS-3 sample, including MRI scans in different contrast modalities (T1w=160, T2w=92, FLAIR=10, TSE=90), along with their corresponding segmentation masks.
+
+Since the aim of this project was to train a model exclusively on synthetic data, the segmentation masks of the selected sub-sample were used as the ground truth to generate a set of 500 synthetic images for model training. For each subject, a total of 10 synthetic MRI and segmentation masks were generated using \texttt{lab2im} \citep{billot:2020}, which randomizes image contrast, noise, and deformations, and applies data augmentation on the synthetic images generated. Consequently, although multiple images are generated from the same ground truth mask, each synthetic image is unique. The code used for generating these images is publicly available on \href{https://github.com/avidiella/synthetic-mri-segmentation/tree/main/synthetic-image-generation}{this project's Github Repository}. See an example of some slices from a synthetic MRI, with its synthetic segmentation mask created with this library, in Figure \ref{fig:synth_mri_example}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figs/synth_mri_example.png}
+	\caption{Slices from an instance extracted from training set: a synthetic brain MRI and its corresponding segmentation mask, generated with \texttt{lab2im} \citep{billot:2020}.}
+	\label{fig:synth_mri_example}
+\end{figure}
+
+\subsection{Test Data}
+For the test set, 100 subjects that were not used in the synthetic image generation phase were randomly selected from the dataset, corresponding to approximately 20\% of the total training data. From these subjects, also containing MRI scans in different contrast modalities, a balanced selection was performed to test model generalization on T1w, and T2w volumes, considering the availability of each modality (T1w=53, T2w=47). TSE and FLAIR were not included in the training set because of the differences in volume size and voxel sizes on the time axis.
+
+\section{Data Pre-processing}
+In this section, the different tasks performed to pre-process data before modeling is detailed.
+
+\subsection{Training Data}
+Before the generation of the synthetic data, it was necessary to pre-process the selection of 50 subjects to be used as ground truth. Both synthetic MRI volumes and segmentation masks were pre-processed for different purposes that are detailed in the following sections.
+\subsubsection{Synthetic MRI generation}
+To generate synthetic MRI volumes and synthetic segmentation masks, it was necessary to pre-process the segmentation files provided by the original dataset.
+
+The segmentation of the MRI scans by the OASIS-3 project was performed with FreeSurfer (v.5.0, v.5.1, or v.5.3, depending on the scan), hence producing an automated segmentation for different anatomical structures. Library \texttt{lab2im} creates an output with the same anatomical labels as its input. Then, considering that this project only focuses on identifying GM, WM, and CSF, segmentation masks produced by FreeSurfer were pre-processed to segment only these areas, with labels re-coded appropriately.
+
+To do so, a \href{https://github.com/avidiella/synthetic-mri-segmentation/blob/main/synthetic-image-generation/segmentation_dictionary.md}{dictionary} was created based on the code-ROI correspondence extracted from \texttt{FreeSurferColorLUT.txt}, grouping different cortical and subcortical areas under the GM or WM label and liquid spaces as CSF. The labels were then recoded as follows: 0 = background, 1 = GM, 2 = WM, 3 = CSF.
+
+After pre-processing the segmentation masks, they can be used as ground truth to generate a set of 500 synthetic MRI scans and segmentation masks using the library \texttt{lab2im}. The code can be also found in this project's 
+\href{https://github.com/avidiella/synthetic-mri-segmentation/tree/main/synthetic-image-generation}{GitHub repository}.
+
+\subsubsection{Synthetic Data Evaluation}
+To evaluate the quality of the synthetic data, the traditional MRI preparation steps detailed in \citet{kondrateva2024negligible} were followed, following some considerations by \citet{gourdeau2022proper}, and adding some additional steps to accommodate the needs of the dataset.
+
+\begin{itemize}
+	\item Check voxel spacing. For a reliable evaluation, images with voxel spacing different from 1 × 1 × 1 mm³ were excluded from the quality assessment. This has led to dropping both TSE and FLAIR volumes, which presented different voxel spacing, for this analysis.
+	\item Reorient segmentation mask. FreeSurfer uses LIA (Lateral Inferior Anterior) orientation for all of its volumetric data files, so the synthetic MRI and masks maintain it. Those were reoriented to RAS (Right Anterior Superior) to match the real MRI images and the ground truth segmentation masks. \item Create a brain mask. Synthetic MRI volumes have a noisy background, so a brain mask is generated from the segmentation masks, merging the labels for GM, WM, and CSF into a whole brain mask so the brain tissue can be extracted from the background in the synthetic MRI.
+	\item Reorient MRI. As with the segmentation mask, the MRI volume should be reoriented from LIA to RAS to match the real MRI.
+	\item Remove background. From the brain mask created from the segmentation mask, extract the brain tissue and remove the background, recoding it with label 0.
+	\item Clip and normalize intensities inside the brain. Extreme values are clipped at the 1st and 99th percentiles, and intensities are normalized to the [0,1] range.
+\end{itemize}
+
+The code used to perform all these tasks to generate the synthetic training set is available in a \href{https://github.com/avidiella/synthetic-mri-segmentation/tree/main/image-pre-processing}{dedicated section} on this project's GitHub Repository.
+
+\subsection{Test Data}
+Because of the features of the nnU-Net, which performs pre-processing of the volumes on its own before the training phase, most of the pre-processing steps defined in \citet{kondrateva2024negligible} were not needed. However, there are a few tasks that should be performed before using them for testing.
+
+\begin{itemize}
+	\item Skull stripping. Real MRIs include bone tissue, which is not useful to the current project and can induce noise in the model \citep{kondrateva2024negligible}. To avoid this, the brain tissue is extracted from the skull using library \texttt{HD-BET} \citep{isensee2019automated}.
+	\item Resize image to have same axes. The real images have varying dimensions along the three axes, which differ from those of the synthetic images. Considering that their volume does not condition the size of the brain masks, the chosen method to resize the real MRI is zero-padding, and it is meant to reconstruct background spaces to fit size 256 × 256 × 256, avoiding any brain mask modification.
+	\item Extract brain mask. This step is needed because even if real MRIs do not have a similar background to that of synthetic MRIs created with \texttt{lab2im}, the brain tissue should be isolated from the background to normalize the intensities accurately.
+	\item Clip and normalize intensities inside the brain. Extreme values are clipped at the 1st and 99th percentiles, and intensities are normalized to the [0,1] range.
+\end{itemize}
+
+Both the code for \href{https://github.com/avidiella/synthetic-mri-segmentation/tree/main/skull-stripping}{skull-stripping} and \href{https://github.com/avidiella/synthetic-mri-segmentation/tree/main/image-pre-processing}{MRI pre-processing} can be found on the GitHub repository. See an example with slices of pre-processed real MRI, synthetic MRI and segmentation labels on Figure \ref{fig:prep_grid}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.70\textwidth]{./figs/prep_grid.png}
+	\caption{Results of image pre-processing on real MRI, synthetic MRI and synthetic segmentation masks.}
+	\label{fig:prep_grid}
+\end{figure}
+
+\section{Image Quality}
+To evaluate the fidelity of the synthetic MRI images generated for this project, several quantitative analyses were performed comparing the synthetic scans to their corresponding real images. In the first place, the distribution of voxel intensities within the brain was visualized using histograms for both synthetic and real images, providing an overall view of intensity ranges and potential differences between real and synthetic images.
+
+The Structural Similarity Index Measure is a popular image quality assessment metric that combines the evaluation of the luminance, contrast, and structure. This metric intends to reproduce certain features of the human visual system following Weber’s law, and according to some authors, it correlates better than MAE with human assessment of image quality \citep{gourdeau2022proper}. Thus, this metric is useful to evaluate the quality of the synthetic MRI in terms of brain anatomy, but it also allows to evaluate how close synthetic images are to real MRI sequences in terms of contrast and luminance, and it also can provide an approximation of how realistic they can look to the human eye.
+
+The Peak Signal-to-Noise Ratio was originally developed to measure the reconstruction quality of a lossy compressed image compared to the uncompressed reference image \citep{dohmen2025similarity}, but it is frequently used to evaluate image similarity. PSNR performs a voxel-wise comparison of intensity differences, but unlike SSIM, it is insensitive to structural information. Nevertheless, it can serve as an approximation of how closely the intensity distribution of a synthetic image matches that of a real one. This makes this metric useful not only to assess how similar a synthetic image is to a specific MRI sequence but also for quantifying how different the synthetic brain is from its ground truth, reflecting variability in the generated data.
+
+Considering that from each real image belonging to a single subject, 10 synthetic images were generated, evaluation metrics have been performed pairwise, comparing each synthetic MRI to a ground truth. For SSIM, the metric was calculated slice by slice and averaged across slices to obtain a single 3D SSIM value.
+Because subjects may have scans in multiple sequences, every scan was included as potential ground truth. For each synthetic image, both SSIM and PSNR were computed against all real volumes of that subject. The highest SSIM was selected as the best match, identifying the real image most similar to the synthetic one, including its MRI sequence. This approach allows quantifying not only similarity in intensity and structure but also the similarity of the synthetic image, which is not in any specific MRI variant, with real sequences.
+
+\section{Modeling and Training}
+The nnU-Net is a self-configuring, deep learning-based segmentation method that automatically configures itself, including preprocessing, network architecture, training, and post-processing. For this reason, no manual pre-processing was needed for the training data. A specific function of the nnU-Net performs the pre-processing considering the characteristics of the sample. In the case of the present training data, voxel spacing was modified to 1.26677 × 1.26677 × 1.26677 mm³ with voxel intensities standardized with Z-score normalization.
+
+After pre-processing, nnU-Net produces a file with recommendations on the best architecture and hyperparameters for the model. Considering the characteristics of the sample and the computational resources available, the recommended pipeline is training a model \texttt{3d\_lowres} and, after that, a \texttt{3d\_cascade\_fullres}. This pipeline consists of, firstly, training a 3D U-Net that operates on low-resolution images on a 5-fold cross validation scheme and then, secondly, a high-resolution 3D U-Net refines the predictions of the former. However, because of time and computational constraints, only \texttt{3d\_lowres} training has been performed on 5 folds with a split of 400 training and 100 validation cases for each one.
+
+Each fold of the \texttt{3d\_lowres} architecture uses a plain 3D U-Net following the standard encoder-decoder structure, consisting of six encoder-decoder stages. The number of feature channels per stage is [32, 64, 128, 256, 320, 320], with early stages using fewer channels and deeper stages using more to capture complex spatial patterns. All convolutional layers use 3 × 3 × 3 kernels. Strides are set to [1, 1, 1] in the first stage and [2, 2, 2] in the following stages. Each stage contains two consecutive convolutional layers, mirrored in the decoder. All convolutions are followed by a LeakyReLU activation, and no dropout is used.
+
+Folds are trained for 1,000 epochs each, which is the default value set by nnU-Net. The initial learning rate is 0.01 for learning network weights, and its value decays throughout the training following the formula $(1 - \frac{\text{epoch}}{\text{epoch}_{\max}})^{0.9}$. The loss function is computed with the sum of cross-entropy and pseudo-dice loss.
+
+The training metrics reported by nnU-Net are shown in Figure \ref{fig:model_loss}, and show how for each fold, validation losses decreased rapidly in the initial 100 epochs until reaching a plateau, indicating stable convergence. The pseudo-Dice metric increases correspondingly, reaching a high value early in training stages for all folds, and remaining stable throughout the epoch with pseudo-Dice scoring over 0.9.
+
+\begin{figure}[ht]
+	\centering
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{./figs/progress_loss_f0.png}\par\medskip
+		\includegraphics[width=\linewidth]{./figs/progress_loss_f2.png}\par\medskip
+		\includegraphics[width=\linewidth]{./figs/progress_loss_f4.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{./figs/progress_loss_f1.png}\par\medskip
+		\includegraphics[width=\linewidth]{./figs/progress_loss_f3.png}
+	\end{minipage}
+	\caption{Image depicting the training metrics through this process, including loss and pseudo dice metrics per fold, throughout 1000 epoch.}
+	\label{fig:model_loss}
+\end{figure}
+
+\chapter{Results}
+In this chapter, the results of the image generation, as well as those of the model training are reported.
+\section{Quality of Synthetic MRI Scans}
+To assess the quality of the generated synthetic MRI scans, in the first place a qualitative analysis of image intensities is performed (see Table \ref{tab:mri_stats}).
+
+\begin{table}[htbp]
+	\centering
+	\caption{Overall voxel intensity statistics for real and synthetic MRI datasets.}
+	\label{tab:mri_stats}
+	\begin{tabular}{lccccc}
+		\hline
+		\textbf{MRI Type} & \textbf{Mean} & \textbf{Std} & \textbf{Min} & \textbf{Max} & \textbf{Median} \\
+		\hline
+		Real & 0.473 & 0.249 & 0.002 & 1.0000 & 0.448 \\
+		Synthetic & 0.465 & 0.282 & 0.004 & 1.000 & 0.456 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Overall, results show that the intensity distribution is similar between real and synthetic MRI. However, when plotting a histogram to evaluate the distribution of those intensities, notable differences can be observed (see Figure \ref{fig:hist_intentisites}).
+
+Real MRI concentrate most of the intensities around values 0.2 to 0.4, stabilizing for the subsequent intensities and showing few low or high-intensity voxels at the extremes, around the range 0.0–0.1 and 0.9–1.0. In contrast, synthetic images show a pronounced peak at low intensities between 0.0 and 0.2, and another increase around 0.6–0.9. Therefore, synthetic images exhibit a much more varied intensity distribution than real images, since real MRIs present specific intensities according to the image contrast of the scan. These differences reflect the particular characteristics of real MRIs and their sequences (T1w, T2w or FLAIR), but also that of synthetic MRIs generated with \texttt{lab2im}, which do not replicate intensities of any specific real sequence. Additionally, synthetic images show deformations and random noise, which contributes to intensity variability when compared to real images.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./figs/histogram_psnr_vs_ssim.png}
+	\caption{Intensity densities for both real and synthetic MRIs.}
+	\label{fig:hist_intentisites}
+\end{figure}
+
+To perform a quantitative analysis of the quality of the synthetic images, SSIM and PSNR were computed across all scans. As described in the previous section, each synthetic image was matched to a real scan from the same subject, using the highest SSIM value to determine the best correspondence. Since synthetic MRIs do not represent any specific sequence, this highest match serves as an approximation for identifying the most similar real contrast. The results are summarized in Table \ref{tab:ssim_psnr}.
+
+\begin{table}[htbp]
+	\centering
+	\caption{SSIM and PSNR statistics across contrasts T1w and T2w.}
+	\label{tab:ssim_psnr}
+	\begin{tabular}{lcccccccc}
+		\hline
+		& \multicolumn{4}{c}{\textbf{SSIM}} & \multicolumn{4}{c}{\textbf{PSNR (dB)}} \\
+		\cline{2-5} \cline{6-9}
+		\textbf{Contrast} 
+		& \textbf{Min} & \textbf{Max} & \textbf{Mean} & \textbf{Std}
+		& \textbf{Min} & \textbf{Max} & \textbf{Mean} & \textbf{Std} \\
+		\hline
+		T1w & 0.7799 & 0.8771 & 0.8251 & 0.0174 & 15.66 & 21.35 & 18.24 & 0.94 \\
+		T2w & 0.7643 & 0.8514 & 0.8108 & 0.0175 & 16.05 & 22.86 & 18.89 & 1.49 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+As shown in Figure \ref{fig:violin_ssim}, which presents the same results, a slightly higher number of synthetic images correspond to T1w real MRIs compared to T2w volumes. Additionally, T1w matches reach higher SSIM values. This observation suggests that the synthetic MRIs generated using \texttt{lab2im} may be somewhat biased toward resembling T1w images than T2w.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{./figs/violin_ssim.png}
+	\caption{Distribution of SSIM and PSNR per contrast.}
+	\label{fig:violin_ssim}
+\end{figure}
+
+However, when examining the PSNR distribution, the results differ slightly. Many synthetic images tend to achieve higher PSNR values for T2w scans, indicating greater similarity to real images. At the same time, the T2w images exhibit a wider PSNR distribution suggesting that, while some synthetic T2w images closely resemble real scans, there is also considerable variability in their quality, possibly due to structural differences that PSNR cannot capture. In contrast, T1w images display a narrower distribution, indicating that \texttt{lab2im}-generated synthetic MRIs produce more consistent T1w outputs. 
+
+In conclusion, synthetic MRIs matching T1w scans are structurally consistent and visually similar to T1w real MRIs, as reflected by their slightly higher SSIM values, but also exhibit subtle intensity differences, leading to lower PSNR values. On the other hand, synthetic images that match T2w scans achieve higher PSNR values, indicating closer pixel-wise similarity to real T2w scans, but also show more structural variability, explained by slightly lower SSIM values when compared to synthetic T1w matches.
+
+\section{Model Evaluation}
+After training the nnU-Net model on the dataset in 5 folds, its performance was evaluated using multiple quantitative metrics.
+
+Overall, all folds achieved very similar performance, with mean Dice scores of approximately 0.93 (see Table \ref{tab:dice_per_fold}), indicating good stability and consistency of the training process. To further assess the model's performance, inference and evaluation were performed using an ensemble of the five folds, yielding slightly improved segmentation results than the single folds alone.
+
+\begin{table}[ht]
+	\centering
+	\caption{Mean Dice score obtained for each fold.}
+	\label{tab:dice_per_fold}
+	\begin{tabular}{c c c c c c}
+		\hline
+		\textbf{Fold} & Fold 0 & Fold 1 & Fold 2 & Fold 3 & Fold 4 \\
+		\hline
+		\textbf{Mean Dice} & 0.939 & 0.933 & 0.932 & 0.936 & 0.934 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+To assess the model performance and robustness, metrics reported by nnU-Net were used (see Table \ref{tab:nnunet_metrics}).
+
+First, the model results provide with Dice Similarity Coefficient (DSC), which is a statistic used to evaluate the similarity of two samples (in the specific case of segmentation, between the FreeSurfer and the nnU-Net segmentation). It is equivalent to the F1-score. Second, the Intersection over Union (IoU) metric is used to evaluate how well a model's prediction overlaps with the ground truth. It is a more strict metric than DSC, so lower values are expected. Additionally, the recall was also computed from the confusion matrix components provided by the nnU-Net output, with the aim to assess the proportion of actual correct segmentation that was properly identified by the model.
+
+\begin{table}[ht]
+	\centering
+	\caption{nnU-Net segmentation metrics per class and foreground mean.}
+	\begin{tabular}{lccccccc}
+		\hline
+		\textbf{Class} & \textbf{Dice} & \textbf{IoU} & \textbf{Recall} \\
+		\hline
+		Foreground Mean & 0.762 & 0.664 & 0.799 \\
+		Grey Matter (GM = 1) & 0.663 & 0.519 & 0.719 \\
+		White Matter (WM = 2) & 0.812 & 0.694 & 0.889 \\
+		Cerebrospinal Fluid (CSF = 3) & 0.812 & 0.693 & 0.846 \\
+		\hline
+	\end{tabular}
+	\label{tab:nnunet_metrics}
+\end{table}
+
+For the foreground mean, model shows moderately good results (DSC=0.762, recall=0.799), but as the model training pipeline was not fully completed, there is still room to improve. The Intersection Over Union metric (IoU=0.664) reflects that.
+
+Regarding the segmentation of specific ROIs, the metrics show good results to identify WM (DSC=0.812, recall=0.889, IoU=0.694) and CSF (DSC=0.812, recall=0.846, IoU=0.693), being GM the tissue with moderate-to-low results (DSC=0.663, recall=0.719, IoU=0.519).
+
+The confusion matrix for each ROI (see Figure \ref{fig:confmatrix}) shows that, for GM, there is a high percentage of false negatives, that is, 28\% of the voxels that are actual GM are not identified as such. Although the overall results for WM and CSF are better, they show a similar tendency: areas that are actual WM and CSF are not labeled correctly.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.95\textwidth]{./figs/confmatrix.png}
+	\caption{Confusion matrices for each ROI (GM, WM and CSF).}
+	\label{fig:confmatrix}
+\end{figure}
+
+Finally, a qualitative example of the segmentation results is shown in Figure \ref{fig:seg_results}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figs/seg_results.png}
+	\caption{Example of segmentation performed by nnU-Net on a T2-weighted MRI. From left to right, the real MRI, the ground-truth segmentation and the model segmentation.}
+	\label{fig:seg_results}
+\end{figure}
+
+\chapter{Conclusions and Future Work}
+This work has explored the potential use of synthetic data for model training to address the problem of data scarcity, costly imaging and patient privacy restrictions. To tackle these issues, a methodology similar to that of SynthSeg \citep{billot2023synthseg} has been adopted to implement a segmentation model trained on synthetic data with domain randomization, making the model agnostic to MRI sequences.
+
+Specifically, this work implements this method with the use of library \texttt{lab2im} by \citet{billot:2020}, which generates synthetic MRI scans and segmentation masks from a ground-truth label maps, applying a variety of modifications to successfully implement domain randomization. These images were then used to train a nnU-Net \citep{isensee2021nnu}, a self-configuring segmentation framework that does not require prior image pre-processing or hyperparameter optimization. This makes it an easy-to-use tool accessible to medical specialists without expertise in deep learning architecture design.
+
+The main limitations encountered during the development of this project were primarily related to time constraints and hardware infrastructure. 
+First, as this work was conducted as part of a master’s thesis developed over less than four months, the available time was limited. Many processes involved in data manipulation, such as pre-processing, applying skull-stripping algorithms like \texttt{HD-BET} \citep{isensee2019automated}, and training the nnU-Net, are time-intensive. Consequently, only the low-resolution model version in 5 folds could be trained, preventing completion of the full nnU-Net pipeline.
+Second, restrictions in hardware resources further constrained the project. While platforms such as Kaggle or Google Colab provide GPUs suitable for model training, library incompatibilities and Python environment requirements made it impossible to rely on these resources. Instead, training was performed on a personal computer with limited computational capacity, which increased training times. These limitations also led to using the low-resolution variant of the nnU-Net configuration, which was not the most optimal option for this task.
+
+Despite the evident limitations, when performing an ensemble of the 5 folds, the model achieved moderately robust results. During training, it reached high pseudo-Dice scores (above 0.9) and demonstrated the ability to generalize to real data, producing good segmentation results for white matter and cerebrospinal fluid. For gray matter, the model encountered more difficulties accurately identifying the tissue, though a similar trend was observed in the other regions of interest. Overall, these results are promising and could likely be improved by completing the full training pipeline proposed by the nnU-Net framework.
+
+Additionally, a further refinement of the pipeline could have been performed to incorporate imaging modalities on the model test phase, but due to the lack of time, it was not possible. As TSE and FLAIR could not included in this project due to differences in voxel spacing, a direct comparison between the model segmentations and the ground-truth annotations could not be performed. Consequently, while the model appears to generalize well to Tw and T2w images, it remains unclear whether these results would extend to other contrasts such as FLAIR.
+
+For future work, it would be of interest to train the model on larger datasets and to expand the anatomical variability of the synthetic training data in order to improve generalization to pathological cases. Incorporating clinical cohorts and pathological hallmarks such as tumors or reclassifying labels such as white-matter hyperintensities or non-white-matter hypointensities (which were classified as white matter and grey matter, respectively, in this project) would increase the clinical relevance of this work.
+
+While based on the SynthSeg framework \citep{billot2023synthseg}, this project proposes an alternative pipeline designed for common working environments, requiring modest computational resources common energy consumption that does not go beyond typical academic activities. As it has been successfully applied in a personal computing environment, this pipeline can also be accessible to low-resource clinical settings and research groups that do not dispose of great, up-to-date hardware infrastructures, democratizing the access to deep learning tools for medical image analysis.
+
+\chapter{Glossary}
+\begin{itemize}
+	\item \textbf{AI:} Artificial Intelligence
+	\item \textbf{CNN:} Convolutional Neural Network
+	\item \textbf{CSF:} Cerebrospinal Fluid
+	\item \textbf{CT:} Computed Tomography
+	\item \textbf{DSC:} Dice Similarity Coefficient
+	\item \textbf{GM:} Gray Matter
+	\item \textbf{IoU:} Intersection Over Union
+	\item \textbf{LIA:} Lateral Inferior Anterior
+	\item \textbf{ML:} Machine Learning
+	\item \textbf{MRI:} Magnetic Resonance Imaging
+	\item \textbf{PET:} Positron Emission Tomography 
+	\item \textbf{PSNR:} Peak Signal-to-Noise Ratio
+	\item \textbf{RAS:} Right Anterior Superior
+	\item \textbf{ROI:} Region of Interest
+	\item \textbf{SDG:} Sustainable Development Goals
+	\item \textbf{SPM:} Statistical Parametric Mapping
+	\item \textbf{SSIM:} Structural Similarity Index Measure
+	\item \textbf{SVM:} Support Vector Machine
+	\item \textbf{T1w:} T1-weighted
+	\item \textbf{T2w:} T2-weighted
+	\item \textbf{VBM:} Voxel-based Morphometry
+	\item \textbf{WM:} White Matter
+\end{itemize}
+
+
+% bibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{agsm}
+\bibliography{referencias}
+
+\chapter{Appendices}
+GitHub repository for this project: \href{https://github.com/avidiella/synthetic-mri-segmentation}{https://github.com/avidiella/synthetic-mri-segmentation}
+
+\end{document}

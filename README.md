@@ -72,7 +72,7 @@ This code is under a MIT license. If you use it or any part of this work, please
 Vidiella-deGonzalo, A. (2025) *Synthetic Data Generation for MRI Brain Tissue Segmentation: An evaluation of model robustness and generalization*. Master's Thesis, Universitat Oberta de Catalunya. Available at: https://github.com/avidiella/synthetic-mri-segmentation.
 ```
 @mastersthesis{VidiellaDeGonzalo2025mri,
-  author       = Anna Vidiella-deGonzalo,
+  author       = Anna Vidiella-Gonzalo,
   title        = {Synthetic Data Generation for MRI Brain Tissue Segmentation: An evaluation of model robustness and generalization},
   school       = {Universitat Oberta de Catalunya},
   year         = {2025},
